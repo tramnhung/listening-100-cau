@@ -38,3 +38,42 @@ Nguồn nằm ngoài repo, đường dẫn tương đối trong manifest. Script
 - Riêng Cambridge Test 3 Section 1 câu 10: bản scan thiếu trang in 109, trích dẫn từ ASR theo ngoại lệ đã duyệt; giữ nguyên đáp án từ answer key.
 
 Nội dung và audio thuộc các tác giả, nhà xuất bản tương ứng; dùng cho học tập trong lớp. Repo không chứa PDF, audio gốc, transcript đầy đủ hay mô hình ASR.
+
+## Nộp kết quả vào Google Sheet
+
+Giảng viên tự triển khai Apps Script theo `HUONG-DAN-NOI-GOOGLE-SHEET.md` ở thư mục cha. Website đã chuẩn bị phần gửi, chưa cấu hình hay triển khai dịch vụ Google.
+
+Khi nhận được URL Web app `/exec` và mã lớp, sửa đúng hai hằng số trong `assets/config.js` rồi commit/push:
+
+```js
+export const SUBMIT_ENDPOINT = "URL_WEB_APP_EXEC";
+export const MA_LOP = "MA_LOP_CUA_GIANG_VIEN";
+```
+
+Hiện hai giá trị đều rỗng. `SUBMIT_ENDPOINT` rỗng thì toàn bộ giao diện thu thông tin và nộp kết quả bị ẩn. File config được nạp trước app; không có thư viện ngoài.
+
+Khi bật, sinh viên nhập Họ tên, Mã số sinh viên, Lớp một lần, có thể sửa lại. Thông tin và kết quả chờ nộp lưu riêng trong localStorage (`listening100-submission-v1`). Khi bị chặn lưu trữ, vẫn làm/nộp được trong trang hiện tại và có cảnh báo mất dữ liệu chờ nếu rời trang. Không tự gửi lúc lưu thông tin, chấm điểm, tải lại hoặc mở lại trang. Chỉ nút **Nộp cho cô / Thử lại** mới gửi.
+
+JSON POST chỉ có `maLop`, `hoTen`, `mssv`, `lop`, `setId`, `setTitle`, `tong`, `dung`, `cauSai`. `cauSai` là số câu toàn bộ đề, ngăn bằng dấu phẩy; rỗng khi đúng hết. Điểm là ảnh chụp của **lượt làm vừa chấm**; khi luyện lại câu sai, `tong` là số câu trong lượt luyện lại đó, không gộp với lượt trước. Không gửi câu trả lời chi tiết, thời gian, email hay dữ liệu cá nhân khác. Dòng thông báo dữ liệu xuất hiện cạnh biểu mẫu và từng nút nộp.
+
+Request dùng `Content-Type: text/plain;charset=utf-8`, không gửi cookie, timeout 15 giây. Chỉ phản hồi JSON `{ok:true}` mới báo gửi xong. HTTP lỗi hoặc `{ok:false}` hiện lỗi và nút Thử lại, giữ nguyên kết quả qua tải lại trang nếu localStorage hoạt động. Nút bị khóa khi đang gửi/đã gửi để tránh bấm lặp.
+
+Nếu fetch bị trình duyệt chặn CORS/lỗi mạng, thử một lần `mode: no-cors`; phản hồi opaque chỉ báo **“Đã gửi, cô kiểm tra giúp”**, không khẳng định Sheet đã nhận. Do trình duyệt không phân biệt được CORS với lỗi mạng, và request đầu có thể đã được Apps Script ghi trước khi phản hồi bị chặn, fallback có thể tạo hai dòng. Apps Script hiện chưa có chống trùng; giảng viên đối chiếu/lọc các dòng trùng. Mã lớp nằm trong file công khai, chỉ là mã phân loại/chặn sơ bộ, không phải mật khẩu bảo vệ Sheet.
+
+### Kiểm thử không dùng Google
+
+```sh
+python tools/mock_submission.py
+# Trong terminal khác:
+node tools/test-submission.mjs
+node tools/test-grading.mjs
+```
+
+Mở `http://127.0.0.1:8766/lam-bai.html?set=vstep-p2-t01`. Máy chủ QA thay config **trong phản hồi HTTP**, không sửa file config thật; endpoint giả ở port 8767. Chỉ dùng thông tin sinh viên giả.
+
+- `http://127.0.0.1:8767/scenario?value=fail-once`: lỗi lần đầu, lần sau thành công.
+- Đổi `value` thành `success`, `reject`, `cors`, `disabled` để thử các trường hợp tương ứng; tải lại web sau khi đổi sang/từ `disabled`.
+- `http://127.0.0.1:8767/requests`: xem payload/header nhận được. POST `/reset` xóa nhật ký QA.
+- `http://127.0.0.1:8766/qa-no-storage.html?set=vstep-p2-t01`: chặn đọc/ghi localStorage.
+
+Sau khi có endpoint thật, cần một lượt kiểm thử được giảng viên đồng ý và đối chiếu trực tiếp dòng mới trong Sheet; thử nghiệm cục bộ không thay thế bước này.

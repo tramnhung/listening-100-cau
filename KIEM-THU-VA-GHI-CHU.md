@@ -1,5 +1,21 @@
 # Kiểm thử và ghi chú
 
+## Bổ sung Google Sheet — kiểm thử endpoint giả PASS
+
+- [x] `assets/config.js` có đúng hai hằng số trống; được nạp trước app. Cấu hình trống: không có biểu mẫu hay nút nộp, 5 câu của set vẫn hiển thị bình thường.
+- [x] Họ tên/MSSV/Lớp lưu và tự khôi phục qua tải lại; sửa thông tin được. Mọi đọc/ghi localStorage đều try/catch.
+- [x] Thông báo minh bạch đúng nguyên văn cạnh ô nhập và nút nộp. Nhật ký endpoint **0 request** sau lưu thông tin và chấm bài, trước khi bấm nộp.
+- [x] POST nhận đúng 9 trường, header `text/plain;charset=utf-8`, không preflight. Lượt giao diện thử 4/5 gửi `tong:5`, `dung:4`, `cauSai:"11"`.
+- [x] Lỗi HTTP 503 hiện Gửi hỏng + Thử lại; tải lại vẫn giữ kết quả/thông tin; bấm Thử lại nhận `{ok:true}` và báo Gửi xong.
+- [x] `{ok:false,error:"sai ma lop"}` không coi là thành công và không fallback; kiểm bằng test Node với endpoint HTTP thật cục bộ.
+- [x] CORS bị chặn thật trong trình duyệt: fallback `no-cors`, hiển thị “Đã gửi, cô kiểm tra giúp”, không khẳng định đã nhận. Lỗi console do tình huống CORS/503 được chủ động tạo trong QA.
+- [x] Chặn đọc/ghi localStorage: nhập thông tin, chấm 5/5, nộp thành công trong phiên; hiện nhắc giữ trang mở để không mất kết quả chờ.
+- [x] Test transport kiểm thêm timeout, mất mạng cả hai lần, khóa tính năng khi config trống và không gửi thừa dữ liệu.
+- [x] Không triển khai Apps Script, không gửi đến Google; toàn bộ dữ liệu kiểm thử là giả trên localhost.
+- [ ] Chờ URL endpoint + mã lớp thật: dán config, gửi lượt thử được giảng viên đồng ý và kiểm dòng trong Sheet. Chưa thể xác minh Sheet thật khi chưa có cấu hình.
+
+Giới hạn Apps Script hiện tại: fallback có thể ghi trùng nếu POST đầu được xử lý nhưng phản hồi bị CORS chặn; README nêu rõ để giảng viên lọc/đối chiếu. Kết quả luyện lại là riêng lượt luyện lại, không tự cộng dồn điểm.
+
 ## Dữ liệu và audio — PASS
 
 - 100 câu: 50 MCQ + 20 Đúng / Sai VSTEP, 30 điền từ Cambridge 13. TRUE/FALSE: 10/10, xen kẽ. Mức độ ước lượng: 40 B1, 45 B1+/B2, 15 B2.
