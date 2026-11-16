@@ -1,0 +1,201 @@
+{
+  "workspaceRoot": "../../..",
+  "jobs": [
+    {
+      "id": "vstep-p2-t01",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 01.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p2-t02",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 02.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p2-t06",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 06.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p2-t08",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 08.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p2-t11",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 11.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p2-t14",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 2-20260330T105858Z-3-001/Audio part 2/Phần 2 Test 14.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t04",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 04.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t05",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 05.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t06",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 06.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t18",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 18.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t29",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 29.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p3-t31",
+      "source": "Tai lieu Vstep/bo sung NGHE VSTEP/bo sung NGHE VSTEP/Audio part 3-20260330T105930Z-3-001/Audio part 3/Phần 3 Test 31.mp3",
+      "start": 0,
+      "end": null,
+      "alreadyClean": false
+    },
+    {
+      "id": "vstep-p1-announcements-a",
+      "source": "Làm web listening/audio-part1-clean/vstep-p1-test-02-clean.mp3",
+      "start": 41.7,
+      "end": 142.3,
+      "alreadyClean": true,
+      "normalizeCut": true,
+      "note": "Normalize only this cut from the existing clean file: mean_volume measured -18.3 dB; original book audio is not processed again."
+    },
+    {
+      "id": "p1-b-first",
+      "source": "Làm web listening/audio-part1-clean/vstep-p1-test-02-clean.mp3",
+      "start": 145.2,
+      "end": 207.3,
+      "alreadyClean": true
+    },
+    {
+      "id": "p1-b-last",
+      "source": "Làm web listening/audio-part1-clean/vstep-p1-test-01-clean.mp3",
+      "start": 212.7,
+      "end": 259.6,
+      "alreadyClean": true
+    },
+    {
+      "id": "vstep-p1-announcements-b",
+      "concat": [
+        "p1-b-first",
+        "p1-b-last"
+      ]
+    },
+    {
+      "id": "vstep-p2-t06-vstep-p2-t08",
+      "concat": [
+        "vstep-p2-t06",
+        "vstep-p2-t08"
+      ]
+    },
+    {
+      "id": "vstep-p3-t04-vstep-p3-t05",
+      "concat": [
+        "vstep-p3-t04",
+        "vstep-p3-t05"
+      ]
+    },
+    {
+      "id": "vstep-p3-t06-vstep-p3-t18",
+      "concat": [
+        "vstep-p3-t06",
+        "vstep-p3-t18"
+      ]
+    },
+    {
+      "id": "cam13-t1-s1-q01-05",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD1Track_01.mp3",
+      "start": 179,
+      "end": 282.1,
+      "alreadyClean": false
+    },
+    {
+      "id": "cam13-t1-s1-q06-10",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD1Track_01.mp3",
+      "start": 282.1,
+      "end": 400,
+      "alreadyClean": false
+    },
+    {
+      "id": "cam13-t2-s1-q01-05",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD1Track_05.mp3",
+      "start": 163,
+      "end": 340.5,
+      "alreadyClean": false
+    },
+    {
+      "id": "cam13-t2-s1-q06-10",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD1Track_05.mp3",
+      "start": 340.5,
+      "end": 474.5,
+      "alreadyClean": false
+    },
+    {
+      "id": "cam13-t3-s1-q01-05",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD2Track_01.mp3",
+      "start": 180.2,
+      "end": 338.5,
+      "alreadyClean": false
+    },
+    {
+      "id": "cam13-t3-s1-q06-10",
+      "source": "Tai lieu Vstep/Cambridge IELTS 1-17 _ AMSLINK/Cambridge IELTS 13/IELTS 13 - Audio/IELTS13-Tests1-4CD2Track_01.mp3",
+      "start": 378,
+      "end": 501,
+      "alreadyClean": false
+    }
+  ],
+  "outputs": [
+    "vstep-p1-announcements-a",
+    "vstep-p1-announcements-b",
+    "vstep-p2-t01",
+    "vstep-p2-t02",
+    "vstep-p2-t06-vstep-p2-t08",
+    "vstep-p2-t11",
+    "vstep-p2-t14",
+    "vstep-p3-t04-vstep-p3-t05",
+    "vstep-p3-t06-vstep-p3-t18",
+    "vstep-p3-t29",
+    "vstep-p3-t31",
+    "cam13-t1-s1-q01-05",
+    "cam13-t1-s1-q06-10",
+    "cam13-t2-s1-q01-05",
+    "cam13-t2-s1-q06-10",
+    "cam13-t3-s1-q01-05",
+    "cam13-t3-s1-q06-10"
+  ]
+}

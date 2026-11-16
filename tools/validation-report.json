@@ -1,0 +1,194 @@
+{
+  "audio": [
+    {
+      "file": "cam13-t1-s1-q01-05.mp3",
+      "durationSec": 102.604,
+      "meanVolumeDb": -17.2,
+      "clippedSamples": 0,
+      "samples": 2262426,
+      "bytes": 821652,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "cam13-t1-s1-q06-10.mp3",
+      "durationSec": 94.707,
+      "meanVolumeDb": -17.2,
+      "clippedSamples": 0,
+      "samples": 2088287,
+      "bytes": 758540,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "cam13-t2-s1-q01-05.mp3",
+      "durationSec": 177.5,
+      "meanVolumeDb": -16.8,
+      "clippedSamples": 0,
+      "samples": 3913875,
+      "bytes": 1420797,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "cam13-t2-s1-q06-10.mp3",
+      "durationSec": 110.722,
+      "meanVolumeDb": -17.1,
+      "clippedSamples": 0,
+      "samples": 2441411,
+      "bytes": 886645,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "cam13-t3-s1-q01-05.mp3",
+      "durationSec": 157.62,
+      "meanVolumeDb": -17.2,
+      "clippedSamples": 0,
+      "samples": 3475525,
+      "bytes": 1261763,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "cam13-t3-s1-q06-10.mp3",
+      "durationSec": 121.396,
+      "meanVolumeDb": -17.4,
+      "clippedSamples": 0,
+      "samples": 2676776,
+      "bytes": 972118,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p1-announcements-a.mp3",
+      "durationSec": 100.105,
+      "meanVolumeDb": -17.6,
+      "clippedSamples": 0,
+      "samples": 2207312,
+      "bytes": 801791,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p1-announcements-b.mp3",
+      "durationSec": 109.142,
+      "meanVolumeDb": -17.0,
+      "clippedSamples": 0,
+      "samples": 2406575,
+      "bytes": 873786,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p2-t01.mp3",
+      "durationSec": 50.013,
+      "meanVolumeDb": -16.8,
+      "clippedSamples": 0,
+      "samples": 1102795,
+      "bytes": 400968,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p2-t02.mp3",
+      "durationSec": 68.914,
+      "meanVolumeDb": -16.6,
+      "clippedSamples": 0,
+      "samples": 1519559,
+      "bytes": 552270,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p2-t06-vstep-p2-t08.mp3",
+      "durationSec": 79.62,
+      "meanVolumeDb": -16.6,
+      "clippedSamples": 0,
+      "samples": 1755625,
+      "bytes": 637640,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p2-t11.mp3",
+      "durationSec": 60.921,
+      "meanVolumeDb": -16.7,
+      "clippedSamples": 0,
+      "samples": 1343301,
+      "bytes": 488322,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p2-t14.mp3",
+      "durationSec": 62.581,
+      "meanVolumeDb": -16.5,
+      "clippedSamples": 0,
+      "samples": 1379922,
+      "bytes": 501488,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p3-t04-vstep-p3-t05.mp3",
+      "durationSec": 94.562,
+      "meanVolumeDb": -17.3,
+      "clippedSamples": 0,
+      "samples": 2085085,
+      "bytes": 757175,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p3-t06-vstep-p3-t18.mp3",
+      "durationSec": 144.215,
+      "meanVolumeDb": -16.9,
+      "clippedSamples": 1,
+      "samples": 3179946,
+      "bytes": 1154445,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p3-t29.mp3",
+      "durationSec": 161.938,
+      "meanVolumeDb": -17.7,
+      "clippedSamples": 1,
+      "samples": 3570731,
+      "bytes": 1296446,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    },
+    {
+      "file": "vstep-p3-t31.mp3",
+      "durationSec": 161.676,
+      "meanVolumeDb": -17.6,
+      "clippedSamples": 0,
+      "samples": 3564955,
+      "bytes": 1294356,
+      "formatOk": true,
+      "xing": true,
+      "errors": []
+    }
+  ],
+  "totalAudioBytes": 14880202,
+  "errors": [],
+  "pass": true
+}

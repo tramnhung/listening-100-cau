@@ -1,0 +1,3561 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-11-16",
+  "totalQuestions": 100,
+  "sets": [
+    {
+      "id": "vstep-p1-announcements-a",
+      "title": "Thông báo ngắn – Chặng 1",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 1",
+        "test": 2,
+        "items": "1-5"
+      },
+      "skill": "listening",
+      "level": "B1",
+      "audio": "audio/vstep-p1-announcements-a.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p1-t02-q01",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What time will the flight now be leaving at?",
+          "options": [
+            {
+              "key": "A",
+              "text": "At 6:00"
+            },
+            {
+              "key": "B",
+              "text": "At 7:00"
+            },
+            {
+              "key": "C",
+              "text": "At 7:15"
+            },
+            {
+              "key": "D",
+              "text": "At 7:50"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Giờ khởi hành mới là 7 giờ 15 phút tối.",
+          "transcriptQuote": "The flight will now be leaving at 7:15p.m from gate 22A.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 1,
+          "audioStartSec": 6.8
+        },
+        {
+          "id": "vstep-p1-t02-q02",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "How much will a $50 sweater cost now?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$50"
+            },
+            {
+              "key": "B",
+              "text": "$5"
+            },
+            {
+              "key": "C",
+              "text": "$15"
+            },
+            {
+              "key": "D",
+              "text": "$25"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Áo giảm 50%, nên chiếc áo 50 đô la còn 25 đô la.",
+          "transcriptQuote": "Every sweater will be 50% off.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 2,
+          "audioStartSec": 24.94
+        },
+        {
+          "id": "vstep-p1-t02-q03",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What number is the white line?",
+          "options": [
+            {
+              "key": "A",
+              "text": "6"
+            },
+            {
+              "key": "B",
+              "text": "4"
+            },
+            {
+              "key": "C",
+              "text": "7"
+            },
+            {
+              "key": "D",
+              "text": "3"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Tuyến màu trắng là tuyến số 4.",
+          "transcriptQuote": "You can transfer to the white line, line number 4 to Seoul soccer stadium.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 3,
+          "audioStartSec": 50.36
+        },
+        {
+          "id": "vstep-p1-t02-q04",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What color is the dog?",
+          "options": [
+            {
+              "key": "A",
+              "text": "White with brown paws"
+            },
+            {
+              "key": "B",
+              "text": "Brown with white paws"
+            },
+            {
+              "key": "C",
+              "text": "Brown with black paws"
+            },
+            {
+              "key": "D",
+              "text": "Black with brown paws"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Chú chó có lông nâu và bàn chân trắng.",
+          "transcriptQuote": "It is brown with white paws and answers to the name Sam.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 4,
+          "audioStartSec": 64.86
+        },
+        {
+          "id": "vstep-p1-t02-q05",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What difference will be seen between Monday and Tuesday?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Monday will be far hotter."
+            },
+            {
+              "key": "B",
+              "text": "Tuesday will have more rain."
+            },
+            {
+              "key": "C",
+              "text": "There will be some higher temperatures on Tuesday."
+            },
+            {
+              "key": "D",
+              "text": "There will be some extra rain showers on Mon day."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Nhiệt độ miền bắc tăng từ khoảng 20 lên 23 độ vào thứ Ba.",
+          "transcriptQuote": "Tuesday will also have similar conditions with slightly higher temperatures of about 23 degrees in the north.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 5,
+          "audioStartSec": 93.06
+        }
+      ],
+      "audioDurationSec": 100.105
+    },
+    {
+      "id": "vstep-p1-announcements-b",
+      "title": "Thông báo ngắn – Chặng 2",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 1",
+        "test": "2, 1",
+        "items": "Test 2: 6-8; Test 1: 6-7"
+      },
+      "skill": "listening",
+      "level": "B1",
+      "audio": "audio/vstep-p1-announcements-b.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p1-t02-q06",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "Why are the students being sent home?",
+          "options": [
+            {
+              "key": "A",
+              "text": "It is a school holiday."
+            },
+            {
+              "key": "B",
+              "text": "There is a problem with the heating system."
+            },
+            {
+              "key": "C",
+              "text": "Some of the teachers are absent."
+            },
+            {
+              "key": "D",
+              "text": "The water pipes burst"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Đường ống gas bị vỡ trong lúc trời rất lạnh, nên học sinh được cho về.",
+          "transcriptQuote": "Due to a burst in the gas pipes as well as the extremely cold weather today’s classes will be canceled.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "6"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 6,
+          "audioStartSec": 0.82
+        },
+        {
+          "id": "vstep-p1-t02-q07",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What will happen in thirty minutes?",
+          "options": [
+            {
+              "key": "A",
+              "text": "They will land."
+            },
+            {
+              "key": "B",
+              "text": "Dinner will be served."
+            },
+            {
+              "key": "C",
+              "text": "They will enter into some bad weather."
+            },
+            {
+              "key": "D",
+              "text": "Lunch will be served."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Bữa trưa sẽ được phục vụ sau khoảng 30 phút.",
+          "transcriptQuote": "We should pass through the bad weather within thirty minutes at which time lunch will be served.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "7"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 7,
+          "audioStartSec": 36.28
+        },
+        {
+          "id": "vstep-p1-t02-q08",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the problem?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A car has a flat tire."
+            },
+            {
+              "key": "B",
+              "text": "A car has been stolen."
+            },
+            {
+              "key": "C",
+              "text": "A car has broken down."
+            },
+            {
+              "key": "D",
+              "text": "A car is blocking the entrance."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Chiếc xe đang chắn lối vào, khiến xe giao hàng không vào được.",
+          "transcriptQuote": "Your car is blocking the entrance.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 2,
+            "items": "8"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 8,
+          "audioStartSec": 53.04
+        },
+        {
+          "id": "vstep-p1-t01-q06",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "Which prizes are mentioned?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A holiday and a CD player"
+            },
+            {
+              "key": "B",
+              "text": "A DVD player and a CD player"
+            },
+            {
+              "key": "C",
+              "text": "A DVD player and a holiday"
+            },
+            {
+              "key": "D",
+              "text": "A holiday and a television"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Giải thưởng gồm đầu DVD mới và một kỳ nghỉ.",
+          "transcriptQuote": "Prizes include a new DVD player and a holiday.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 1,
+            "items": "6"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 9,
+          "audioStartSec": 81.66
+        },
+        {
+          "id": "vstep-p1-t01-q07",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "How much would five tickets cost?",
+          "options": [
+            {
+              "key": "A",
+              "text": "$100"
+            },
+            {
+              "key": "B",
+              "text": "$50"
+            },
+            {
+              "key": "C",
+              "text": "$20"
+            },
+            {
+              "key": "D",
+              "text": "$200"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Mỗi vé giá 20 đô la; năm vé là 100 đô la.",
+          "transcriptQuote": "tickets will now be priced at the lower cost of twenty dollars.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 1",
+            "test": 1,
+            "items": "7"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 10,
+          "audioStartSec": 99.96
+        }
+      ],
+      "audioDurationSec": 109.142
+    },
+    {
+      "id": "vstep-p2-t01",
+      "title": "VSTEP Part 2 – Bài 1",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 2",
+        "test": 1,
+        "items": "1,2,3"
+      },
+      "skill": "listening",
+      "level": "B1",
+      "audio": "audio/vstep-p2-t01.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p2-t01-q01",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the topic of the conversation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Taking measurements"
+            },
+            {
+              "key": "B",
+              "text": "Taking a break"
+            },
+            {
+              "key": "C",
+              "text": "Looking on the Internet"
+            },
+            {
+              "key": "D",
+              "text": "Finding a small MP3 player"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Hai người đang tìm một máy nghe nhạc MP3 nhỏ gọn.",
+          "transcriptQuote": "I'm surfing the Internet for an MP3 player.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 1,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 11,
+          "audioStartSec": 6.52
+        },
+        {
+          "id": "vstep-p2-t01-q02",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the man's main point?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The device is too small."
+            },
+            {
+              "key": "B",
+              "text": "The device is too big."
+            },
+            {
+              "key": "C",
+              "text": "The woman shouldn't get the device."
+            },
+            {
+              "key": "D",
+              "text": "The device is small enough."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Kích thước máy đáp ứng yêu cầu nhỏ gọn của người nữ.",
+          "transcriptQuote": "it's 9.1 centimeterstall and 5 centimeters wide. Just what I need!",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 1,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 12,
+          "audioStartSec": 41.52
+        },
+        {
+          "id": "vstep-p2-t01-q03",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What does the device do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Reads books"
+            },
+            {
+              "key": "B",
+              "text": "Searches the Internet"
+            },
+            {
+              "key": "C",
+              "text": "Plays music"
+            },
+            {
+              "key": "D",
+              "text": "Solves math problems"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Máy lưu trữ các bài hát để phát nhạc.",
+          "transcriptQuote": "Someone told me it holds 5,000 songs!",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 1,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 13,
+          "audioStartSec": 16.66
+        },
+        {
+          "id": "vstep-p2-t01-tf1",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "Brian offers his calculator to help Julie work out the measurements.",
+          "answer": "TRUE",
+          "explanation": "Brian đưa máy tính cho Julie khi cô ấy đổi đơn vị đo.",
+          "transcriptQuote": "Here! Use my calculator.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 1,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 14,
+          "audioStartSec": 37.6
+        },
+        {
+          "id": "vstep-p2-t01-tf2",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "The MP3 player can hold a total of three thousand songs.",
+          "answer": "FALSE",
+          "explanation": "Thông tin được nhắc đến là 5.000 bài hát, không phải 3.000.",
+          "transcriptQuote": "Someone told me it holds 5,000 songs!",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 1,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 15,
+          "audioStartSec": 16.66
+        }
+      ],
+      "audioDurationSec": 50.013
+    },
+    {
+      "id": "vstep-p2-t02",
+      "title": "VSTEP Part 2 – Bài 2",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 2",
+        "test": 2,
+        "items": "1,2,3"
+      },
+      "skill": "listening",
+      "level": "B1",
+      "audio": "audio/vstep-p2-t02.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p2-t02-q01",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the man's problem?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He doesn’t like math."
+            },
+            {
+              "key": "B",
+              "text": "He is not very good at basketball."
+            },
+            {
+              "key": "C",
+              "text": "He hates school."
+            },
+            {
+              "key": "D",
+              "text": "He needs help with English."
+            }
+          ],
+          "answer": "A",
+          "explanation": "Người nam nói mình ghét môn Toán.",
+          "transcriptQuote": "Man, I hate math!",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 2,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 16,
+          "audioStartSec": 6.52
+        },
+        {
+          "id": "vstep-p2-t02-q02",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the woman's main point?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Math is difficult."
+            },
+            {
+              "key": "B",
+              "text": "School is easy."
+            },
+            {
+              "key": "C",
+              "text": "Try something new to make math easier."
+            },
+            {
+              "key": "D",
+              "text": "Change your English class."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Người nữ khuyên thử một cách hình dung mới để môn Toán dễ hiểu hơn.",
+          "transcriptQuote": "Math is too abstract, right? Well, try to make it real for yourself.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 2,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 17,
+          "audioStartSec": 19.74
+        },
+        {
+          "id": "vstep-p2-t02-q03",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What does the woman advise the man to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Imagine something abstract as real"
+            },
+            {
+              "key": "B",
+              "text": "Picture something entertaining in his mind"
+            },
+            {
+              "key": "C",
+              "text": "Give up writing down every word in class"
+            },
+            {
+              "key": "D",
+              "text": "Use pictures to represent words"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Cô ấy hình dung con số như tiền để biến điều trừu tượng thành cụ thể.",
+          "transcriptQuote": "My secret is I think about numbers in math as if they were money.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 2,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 18,
+          "audioStartSec": 24.68
+        },
+        {
+          "id": "vstep-p2-t02-tf1",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "Alex plans to try the suggested method in his class tomorrow.",
+          "answer": "TRUE",
+          "explanation": "Alex nói sẽ thử cách này vào ngày mai.",
+          "transcriptQuote": "Hey that’s awesome! I’ll try it tomorrow.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 2,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 19,
+          "audioStartSec": 59.92
+        },
+        {
+          "id": "vstep-p2-t02-tf2",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "The two students plan to attend a football game that evening.",
+          "answer": "FALSE",
+          "explanation": "Họ hẹn gặp ở trận bóng rổ, không phải bóng đá.",
+          "transcriptQuote": "See you at the basketball game tonight.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 2,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 20,
+          "audioStartSec": 64.28
+        }
+      ],
+      "audioDurationSec": 68.914
+    },
+    {
+      "id": "vstep-p2-t06-vstep-p2-t08",
+      "title": "Bốc thăm chỗ đỗ xe và trung tâm thể thao",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 2",
+        "test": "6, 8",
+        "items": "Mỗi bài: 1-3 và 2 câu tự soạn"
+      },
+      "skill": "listening",
+      "level": "B1",
+      "audio": "audio/vstep-p2-t06-vstep-p2-t08.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p2-t06-q01",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What are the people mainly discussing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Biology class"
+            },
+            {
+              "key": "B",
+              "text": "A lottery"
+            },
+            {
+              "key": "C",
+              "text": "Graduation"
+            },
+            {
+              "key": "D",
+              "text": "Transportation"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Họ đang nói về việc bốc thăm chỗ đỗ xe.",
+          "transcriptQuote": "Today’s the day of the parking-space lottery.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 6,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 21,
+          "audioStartSec": 5.3
+        },
+        {
+          "id": "vstep-p2-t06-q02",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "Which is true?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Parking on campus is free"
+            },
+            {
+              "key": "B",
+              "text": "The woman has a car"
+            },
+            {
+              "key": "C",
+              "text": "All students are allowed to park their car at school"
+            },
+            {
+              "key": "D",
+              "text": "The man wants to drive his car to school"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Người nam muốn có chỗ đỗ để mang xe đến trường.",
+          "transcriptQuote": "I want to see if I geta parking space for next year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 6,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 22,
+          "audioStartSec": 8.28
+        },
+        {
+          "id": "vstep-p2-t06-q03",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the main thing that the man wants?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To win a parking space"
+            },
+            {
+              "key": "B",
+              "text": "To buy a new car"
+            },
+            {
+              "key": "C",
+              "text": "To have a date with the woman"
+            },
+            {
+              "key": "D",
+              "text": "To get to class on time"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Mục đích của anh ấy là giành một chỗ đỗ xe.",
+          "transcriptQuote": "I want to see if I geta parking space for next year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 6,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 23,
+          "audioStartSec": 8.28
+        },
+        {
+          "id": "vstep-p2-t06-tf1",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "Students pay one hundred and twenty dollars a year for parking.",
+          "answer": "TRUE",
+          "explanation": "Phí đỗ xe là 120 đô la mỗi năm.",
+          "transcriptQuote": "It costs $120 a year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 6,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 24,
+          "audioStartSec": 29.84
+        },
+        {
+          "id": "vstep-p2-t06-tf2",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "The man hopes to secure a parking space for this summer.",
+          "answer": "FALSE",
+          "explanation": "Anh ấy muốn chỗ đỗ cho năm tới, không phải mùa hè này.",
+          "transcriptQuote": "I want to see if I geta parking space for next year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 6,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 25,
+          "audioStartSec": 8.28
+        },
+        {
+          "id": "vstep-p2-t08-q01",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What is the topic of the conversation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Using the student recreation centre"
+            },
+            {
+              "key": "B",
+              "text": "Playing basketball"
+            },
+            {
+              "key": "C",
+              "text": "Included tuition fees"
+            },
+            {
+              "key": "D",
+              "text": "Lost ID cards"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Cuộc trò chuyện giải thích cách sử dụng trung tâm thể thao của trường.",
+          "transcriptQuote": "I'm on my way to the recreation center to play basketball.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 8,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 26,
+          "audioStartSec": 48.64
+        },
+        {
+          "id": "vstep-p2-t08-q02",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What does the woman decide to do?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Buy an ID card"
+            },
+            {
+              "key": "B",
+              "text": "Go to the gym with the man"
+            },
+            {
+              "key": "C",
+              "text": "Play basketball in the park"
+            },
+            {
+              "key": "D",
+              "text": "Study in the library"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Người nữ quyết định đi cùng người nam đến trung tâm.",
+          "transcriptQuote": "Hey, cool. I’ll come with you.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 8,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 27,
+          "audioStartSec": 75.14
+        },
+        {
+          "id": "vstep-p2-t08-q03",
+          "type": "mcq",
+          "level": "B1",
+          "prompt": "What does the woman need to use the gym?",
+          "options": [
+            {
+              "key": "A",
+              "text": "A basketball"
+            },
+            {
+              "key": "B",
+              "text": "Proper shoes"
+            },
+            {
+              "key": "C",
+              "text": "A student ID card"
+            },
+            {
+              "key": "D",
+              "text": "A swimming pool"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Cần xuất trình thẻ sinh viên ở cửa.",
+          "transcriptQuote": "All you need to do is show your ID card at the door.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 8,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 28,
+          "audioStartSec": 72.06
+        },
+        {
+          "id": "vstep-p2-t08-tf1",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "Full-time students receive recreation centre membership as part of their tuition.",
+          "answer": "TRUE",
+          "explanation": "Quyền sử dụng trung tâm đã nằm trong học phí của sinh viên toàn thời gian.",
+          "transcriptQuote": "If you’re a full-time student membership is included in your tuition.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 8,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 29,
+          "audioStartSec": 55.96
+        },
+        {
+          "id": "vstep-p2-t08-tf2",
+          "type": "true_false",
+          "level": "B1",
+          "prompt": "Joe is going to the recreation centre to play tennis.",
+          "answer": "FALSE",
+          "explanation": "Joe đi chơi bóng rổ, không phải quần vợt.",
+          "transcriptQuote": "I'm on my way to the recreation center to play basketball.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 8,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 30,
+          "audioStartSec": 48.64
+        }
+      ],
+      "audioDurationSec": 79.62
+    },
+    {
+      "id": "vstep-p2-t11",
+      "title": "VSTEP Part 2 – Bài 11",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 2",
+        "test": 11,
+        "items": "1,2,3"
+      },
+      "skill": "listening",
+      "level": "B1+/B2",
+      "audio": "audio/vstep-p2-t11.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p2-t11-q01",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What are speakers mainly discussing?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Money"
+            },
+            {
+              "key": "B",
+              "text": "Tutoring"
+            },
+            {
+              "key": "C",
+              "text": "Having lunch"
+            },
+            {
+              "key": "D",
+              "text": "Signing up for a class"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Hai người trao đổi về dịch vụ gia sư.",
+          "transcriptQuote": "I heard there's a tutoring center for each department.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 11,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 31,
+          "audioStartSec": 5.94
+        },
+        {
+          "id": "vstep-p2-t11-q02",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What does the secretary tell the student?",
+          "options": [
+            {
+              "key": "A",
+              "text": "She gives him a phone number."
+            },
+            {
+              "key": "B",
+              "text": "She directs him to the classroom."
+            },
+            {
+              "key": "C",
+              "text": "She says there is no tutoring center."
+            },
+            {
+              "key": "D",
+              "text": "She tells him where the tutoring center is."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Người nữ chỉ nơi đặt trung tâm: ngay bên cạnh.",
+          "transcriptQuote": "Ours is just next door.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 11,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 32,
+          "audioStartSec": 12.72
+        },
+        {
+          "id": "vstep-p2-t11-q03",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is the student's main point?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He needs money"
+            },
+            {
+              "key": "B",
+              "text": "He needs to ask the secretary for an email address"
+            },
+            {
+              "key": "C",
+              "text": "He want to find a tutor"
+            },
+            {
+              "key": "D",
+              "text": "He wants to make an appointment"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Lance muốn tìm nơi có thể giúp mình học môn tiếng Anh.",
+          "transcriptQuote": "Can you tell me where it is for the English Department?",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 11,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 33,
+          "audioStartSec": 9.0
+        },
+        {
+          "id": "vstep-p2-t11-tf1",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "The tutoring service contacts students within three working days of registration.",
+          "answer": "TRUE",
+          "explanation": "Trung tâm liên hệ trong vòng ba ngày làm việc.",
+          "transcriptQuote": "They’ll get in touch with you within three working days.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 11,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 34,
+          "audioStartSec": 32.5
+        },
+        {
+          "id": "vstep-p2-t11-tf2",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "Free tutoring requires participation in a feedback survey lasting six weeks.",
+          "answer": "FALSE",
+          "explanation": "Khảo sát phản hồi kéo dài ba tuần, không phải sáu tuần.",
+          "transcriptQuote": "You’ll just need to agree to do a three-week feedback survey.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 11,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 35,
+          "audioStartSec": 50.6
+        }
+      ],
+      "audioDurationSec": 60.921
+    },
+    {
+      "id": "vstep-p2-t14",
+      "title": "VSTEP Part 2 – Bài 14",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 2",
+        "test": 14,
+        "items": "1,2,3"
+      },
+      "skill": "listening",
+      "level": "B2",
+      "audio": "audio/vstep-p2-t14.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p2-t14-q01",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Why does the student want to buy a bicycle permit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "So he can get a discount"
+            },
+            {
+              "key": "B",
+              "text": "Because he lost his old one"
+            },
+            {
+              "key": "C",
+              "text": "So he can sell his bicycle"
+            },
+            {
+              "key": "D",
+              "text": "So he can park his bicycle on campus."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Giấy phép cho phép đỗ xe đạp trong khuôn viên trường.",
+          "transcriptQuote": "And permit will let me park my bike anywhere on campus?",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 14,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 36,
+          "audioStartSec": 9.5
+        },
+        {
+          "id": "vstep-p2-t14-q02",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "What do we learn about the student from this conversation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He is married"
+            },
+            {
+              "key": "B",
+              "text": "He is studying history"
+            },
+            {
+              "key": "C",
+              "text": "He doesn’t have a bicycle"
+            },
+            {
+              "key": "D",
+              "text": "He can drive a car"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Anh ấy có bằng lái xe, từ đó suy ra anh ấy biết lái ô tô.",
+          "transcriptQuote": "I have my driver’s license.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 14,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 37,
+          "audioStartSec": 34.72
+        },
+        {
+          "id": "vstep-p2-t14-q03",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Where should the man keep the permit?",
+          "options": [
+            {
+              "key": "A",
+              "text": "In his apartment"
+            },
+            {
+              "key": "B",
+              "text": "On his bike"
+            },
+            {
+              "key": "C",
+              "text": "At his parking space"
+            },
+            {
+              "key": "D",
+              "text": "In his wallet"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Giấy phép phải gắn trên khung xe, bên dưới yên.",
+          "transcriptQuote": "Attach it to the main frame, on the center post below the seat.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 14,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 38,
+          "audioStartSec": 52.88
+        },
+        {
+          "id": "vstep-p2-t14-tf1",
+          "type": "true_false",
+          "level": "B2",
+          "prompt": "The bicycle permit remains valid for a period of four years.",
+          "answer": "TRUE",
+          "explanation": "Giấy phép có giá trị trong bốn năm tới.",
+          "transcriptQuote": "It’s valid for the next four years.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 14,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 39,
+          "audioStartSec": 15.7
+        },
+        {
+          "id": "vstep-p2-t14-tf2",
+          "type": "true_false",
+          "level": "B2",
+          "prompt": "The student pays eight dollars to obtain his bicycle permit.",
+          "answer": "FALSE",
+          "explanation": "Lệ phí là bốn đô la, không phải tám đô la.",
+          "transcriptQuote": "That will be four dollars.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 2",
+            "test": 14,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 40,
+          "audioStartSec": 6.72
+        }
+      ],
+      "audioDurationSec": 62.581
+    },
+    {
+      "id": "vstep-p3-t04-vstep-p3-t05",
+      "title": "Beethoven và động vật ngủ đông",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 3",
+        "test": "4, 5",
+        "items": "Mỗi bài: 1-3 và 2 câu tự soạn"
+      },
+      "skill": "listening",
+      "level": "B1+/B2",
+      "audio": "audio/vstep-p3-t04-vstep-p3-t05.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p3-t04-q01",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is the talk mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "The works of Beethoven"
+            },
+            {
+              "key": "B",
+              "text": "Beethoven’s mysterious lover"
+            },
+            {
+              "key": "C",
+              "text": "Beethoven's disease"
+            },
+            {
+              "key": "D",
+              "text": "Facts about Beethoven"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Bài nói giới thiệu nhiều sự kiện trong cuộc đời Beethoven.",
+          "transcriptQuote": "Beethoven wrote hundreds of songs.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 4,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 41,
+          "audioStartSec": 10.76
+        },
+        {
+          "id": "vstep-p3-t04-q02",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "How does the speaker present the information in the lecture?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Chronological order"
+            },
+            {
+              "key": "B",
+              "text": "Contrasting major works"
+            },
+            {
+              "key": "C",
+              "text": "In order of importance"
+            },
+            {
+              "key": "D",
+              "text": "Cause and effect"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Bài bắt đầu từ thời điểm sinh, kể về cuộc đời rồi kết thúc bằng năm mất.",
+          "transcriptQuote": "Beethoven died in 1827.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 4,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 42,
+          "audioStartSec": 41.12
+        },
+        {
+          "id": "vstep-p3-t04-q03",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "Which is true about Beethoven?",
+          "options": [
+            {
+              "key": "A",
+              "text": "He died in Bonn, Germany."
+            },
+            {
+              "key": "B",
+              "text": "He had a wife."
+            },
+            {
+              "key": "C",
+              "text": "He wrote the Fifth Symphony."
+            },
+            {
+              "key": "D",
+              "text": "He was born in 1827."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Bản giao hưởng số 5 là một tác phẩm nổi tiếng của ông.",
+          "transcriptQuote": "One of his most famous is his Fifth Symphony.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 4,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 43,
+          "audioStartSec": 13.48
+        },
+        {
+          "id": "vstep-p3-t04-tf1",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "Beethoven began to lose his hearing at the age of twenty-eight.",
+          "answer": "TRUE",
+          "explanation": "Ông bắt đầu bị điếc khi 28 tuổi.",
+          "transcriptQuote": "At age 28, he began to go deaf.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 4,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 44,
+          "audioStartSec": 26.08
+        },
+        {
+          "id": "vstep-p3-t04-tf2",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "His friends discovered love letters before Beethoven died in 1827.",
+          "answer": "FALSE",
+          "explanation": "Các bức thư được tìm thấy sau khi ông mất, không phải trước đó.",
+          "transcriptQuote": "But after he died friends found some love letters.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 4,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 45,
+          "audioStartSec": 35.36
+        },
+        {
+          "id": "vstep-p3-t05-q01",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is the topic of the lecture?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Hibernation"
+            },
+            {
+              "key": "B",
+              "text": "Winter"
+            },
+            {
+              "key": "C",
+              "text": "Animal habits"
+            },
+            {
+              "key": "D",
+              "text": "Sleep"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Chủ đề là sự ngủ đông của động vật.",
+          "transcriptQuote": "Many animals hibernate during the cold months of the year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 5,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 46,
+          "audioStartSec": 54.14
+        },
+        {
+          "id": "vstep-p3-t05-q02",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "How does the professor explain the places for animal’s hibernation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "By reminding students of a story"
+            },
+            {
+              "key": "B",
+              "text": "By providing pictures in class"
+            },
+            {
+              "key": "C",
+              "text": "By listing the different places"
+            },
+            {
+              "key": "D",
+              "text": "By classifying temporary and permanent homes"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Người nói lần lượt liệt kê các nơi: hang đất, hang động, bụi cây và gốc cây.",
+          "transcriptQuote": "Some animals hibernate in holes in the ground. others sleep in caves, under bushes or at the base of trees.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 5,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 47,
+          "audioStartSec": 60.46
+        },
+        {
+          "id": "vstep-p3-t05-q03",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is the main idea of the talk?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Animals can store energy and fat"
+            },
+            {
+              "key": "B",
+              "text": "Animals hibernate in holes, caves and bushes"
+            },
+            {
+              "key": "C",
+              "text": "Hibernating animals are weak in the spring"
+            },
+            {
+              "key": "D",
+              "text": "Some animals sleep through the winter"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Ý chính là một số động vật ngủ qua các tháng mùa đông.",
+          "transcriptQuote": "Many animals hibernate during the cold months of the year.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 5,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 48,
+          "audioStartSec": 54.14
+        },
+        {
+          "id": "vstep-p3-t05-tf1",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "Stored energy and fat help animals stay alive while they hibernate.",
+          "answer": "TRUE",
+          "explanation": "Năng lượng và mỡ dự trữ giúp động vật sống qua thời gian ngủ đông.",
+          "transcriptQuote": "They have stored extra energy and fat to keep them alive.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 5,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 49,
+          "audioStartSec": 82.62
+        },
+        {
+          "id": "vstep-p3-t05-tf2",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "Animals have rapid heartbeats during their long period of winter sleep.",
+          "answer": "FALSE",
+          "explanation": "Nhịp tim chậm lại khi ngủ đông, không nhanh lên.",
+          "transcriptQuote": "They have slow heartbeats and they almost stop breathing",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 5,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 50,
+          "audioStartSec": 78.52
+        }
+      ],
+      "audioDurationSec": 94.562
+    },
+    {
+      "id": "vstep-p3-t06-vstep-p3-t18",
+      "title": "Thư công việc và đi bộ",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 3",
+        "test": "6, 18",
+        "items": "Mỗi bài: 1-3 và 2 câu tự soạn"
+      },
+      "skill": "listening",
+      "level": "B1+/B2",
+      "audio": "audio/vstep-p3-t06-vstep-p3-t18.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p3-t06-q01",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is the talk mainly about?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Writing letters"
+            },
+            {
+              "key": "B",
+              "text": "Organizing files"
+            },
+            {
+              "key": "C",
+              "text": "Understanding letters"
+            },
+            {
+              "key": "D",
+              "text": "Responding to problems"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Bài nói hướng dẫn viết thư trong công việc.",
+          "transcriptQuote": "When you’re writing a business letter it’s important to be specific.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 6,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 51,
+          "audioStartSec": 2.0
+        },
+        {
+          "id": "vstep-p3-t06-q02",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "Why does the woman mention the golden rule?",
+          "options": [
+            {
+              "key": "A",
+              "text": "To show what is most important to do"
+            },
+            {
+              "key": "B",
+              "text": "To show what is wrong to do"
+            },
+            {
+              "key": "C",
+              "text": "To give information"
+            },
+            {
+              "key": "D",
+              "text": "To answer a letter"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Quy tắc vàng nhấn mạnh điều cốt lõi: viết kiểu thư mình muốn nhận.",
+          "transcriptQuote": "write the kind of business letter that you would like to receive.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 6,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 52,
+          "audioStartSec": 37.08
+        },
+        {
+          "id": "vstep-p3-t06-q03",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What are the main points in the talk?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Use big words and be positive"
+            },
+            {
+              "key": "B",
+              "text": "Write long, specific sentences"
+            },
+            {
+              "key": "C",
+              "text": "Be specific, be positive, and remember the golden rule"
+            },
+            {
+              "key": "D",
+              "text": "Use polite language and list the problems"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Cần cụ thể, tích cực và nhớ quy tắc vàng khi viết thư.",
+          "transcriptQuote": "Next, um, be positive. Say “no” in a good way.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 6,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 53,
+          "audioStartSec": 20.54
+        },
+        {
+          "id": "vstep-p3-t06-tf1",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "A business letter should clearly state the information its writer needs.",
+          "answer": "TRUE",
+          "explanation": "Người viết cần nêu rõ thông tin mình muốn biết.",
+          "transcriptQuote": "If you need information state clearly what you want to know.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 6,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 54,
+          "audioStartSec": 16.6
+        },
+        {
+          "id": "vstep-p3-t06-tf2",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "The speaker recommends using rude language when refusing a request.",
+          "answer": "FALSE",
+          "explanation": "Người nói khuyên dùng ngôn ngữ lịch sự, không thô lỗ.",
+          "transcriptQuote": "Use polite language.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 6,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 55,
+          "audioStartSec": 26.76
+        },
+        {
+          "id": "vstep-p3-t18-q01",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "Why does the professor suggest everyone should walk?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Because there are hills nearby"
+            },
+            {
+              "key": "B",
+              "text": "To lose weight"
+            },
+            {
+              "key": "C",
+              "text": "In order to stretch before jogging"
+            },
+            {
+              "key": "D",
+              "text": "For general health"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Bài nói nêu nhiều lợi ích của đi bộ đối với sức khỏe nói chung.",
+          "transcriptQuote": "walking is very good exercise.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 18,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 56,
+          "audioStartSec": 48.56
+        },
+        {
+          "id": "vstep-p3-t18-q02",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "What is NOT mentioned in the presentation?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Walking to train for sports"
+            },
+            {
+              "key": "B",
+              "text": "Walking for basic health"
+            },
+            {
+              "key": "C",
+              "text": "Walking to lose weight"
+            },
+            {
+              "key": "D",
+              "text": "Walking to make your heart stronger"
+            }
+          ],
+          "answer": "A",
+          "explanation": "Bài có đi bộ vì sức khỏe, giảm cân và tim khỏe hơn; không bàn về luyện thi đấu thể thao.",
+          "transcriptQuote": "For basic health, it’s good to walk most days of the week.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 18,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 57,
+          "audioStartSec": 107.24
+        },
+        {
+          "id": "vstep-p3-t18-q03",
+          "type": "mcq",
+          "level": "B1+/B2",
+          "prompt": "Why should people walk with friends or family?",
+          "options": [
+            {
+              "key": "A",
+              "text": "For safety"
+            },
+            {
+              "key": "B",
+              "text": "Because accidents can happen"
+            },
+            {
+              "key": "C",
+              "text": "In order to walk taster"
+            },
+            {
+              "key": "D",
+              "text": "To talk while walking"
+            }
+          ],
+          "answer": "D",
+          "explanation": "Đi bộ cùng nhau tạo cơ hội trò chuyện.",
+          "transcriptQuote": "People have some of their best conversations while walking.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 18,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 58,
+          "audioStartSec": 93.86
+        },
+        {
+          "id": "vstep-p3-t18-tf1",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "The speaker advises stretching both before and after going for a walk.",
+          "answer": "TRUE",
+          "explanation": "Nên giãn cơ trước và sau khi đi bộ.",
+          "transcriptQuote": "It's best to do some stretches before and after you walk.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 18,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 59,
+          "audioStartSec": 98.06
+        },
+        {
+          "id": "vstep-p3-t18-tf2",
+          "type": "true_false",
+          "level": "B1+/B2",
+          "prompt": "For weight loss, the speaker suggests walking for ten to fifteen minutes.",
+          "answer": "FALSE",
+          "explanation": "Để giảm cân, thời gian được nêu là 30–45 phút hoặc lâu hơn.",
+          "transcriptQuote": "To lose weight, walk for 30 to 45 minutes or more.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 18,
+            "items": "Tự soạn từ transcript"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 60,
+          "audioStartSec": 115.56
+        }
+      ],
+      "audioDurationSec": 144.215
+    },
+    {
+      "id": "vstep-p3-t29",
+      "title": "VSTEP Part 3 – Bài 29",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 3",
+        "test": 29,
+        "items": "1,2,3,4,5"
+      },
+      "skill": "listening",
+      "level": "B2",
+      "audio": "audio/vstep-p3-t29.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p3-t29-q01",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Which tickets are still available?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the piano concert."
+            },
+            {
+              "key": "B",
+              "text": "Twelfth Night."
+            },
+            {
+              "key": "C",
+              "text": "Spider and Rose."
+            },
+            {
+              "key": "D",
+              "text": "The Wild Duck"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Vé còn mua được là vé xem phim Spider and Rose.",
+          "transcriptQuote": "I can get tickets for the Arts Centre cinema to see the Australian comedy film Spider and Rose.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 29,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 61,
+          "audioStartSec": 36.26
+        },
+        {
+          "id": "vstep-p3-t29-q02",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Which exhibition do visitors have to pay a fee?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the Russian ballet exhibition."
+            },
+            {
+              "key": "B",
+              "text": "the Scottish jewellery."
+            },
+            {
+              "key": "C",
+              "text": "the South American photographs."
+            },
+            {
+              "key": "D",
+              "text": "prize winning paintings from a children’s competition."
+            }
+          ],
+          "answer": "A",
+          "explanation": "Triển lãm ballet Nga thu phí; sinh viên có thẻ được mua vé rẻ hơn.",
+          "transcriptQuote": "there’s an exhibition of the history of Russian ballet.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 29,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 62,
+          "audioStartSec": 64.98
+        },
+        {
+          "id": "vstep-p3-t29-q03",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Where can you buy clothes?",
+          "options": [
+            {
+              "key": "A",
+              "text": "on the first floor."
+            },
+            {
+              "key": "B",
+              "text": "in the souvenir shop."
+            },
+            {
+              "key": "C",
+              "text": "close to the Arts Centre."
+            },
+            {
+              "key": "D",
+              "text": "in the main theatre"
+            }
+          ],
+          "answer": "C",
+          "explanation": "Trung tâm mua sắm cách trung tâm nghệ thuật năm phút đi bộ.",
+          "transcriptQuote": "there’s a large shopping centre five minutes’ walk from the Arts Centre.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 29,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 63,
+          "audioStartSec": 110.92
+        },
+        {
+          "id": "vstep-p3-t29-q04",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Where can you enjoy cakes?",
+          "options": [
+            {
+              "key": "A",
+              "text": "the Fountain."
+            },
+            {
+              "key": "B",
+              "text": "Charlie’s coffee"
+            },
+            {
+              "key": "C",
+              "text": "the cinema kiosk."
+            },
+            {
+              "key": "D",
+              "text": "The Balcony Restaurant"
+            }
+          ],
+          "answer": "B",
+          "explanation": "Charlie’s phục vụ cà phê, bánh mì kẹp và bánh ngọt.",
+          "transcriptQuote": "There’s also Charlie’s coffee bar which serves coffee, sandwiches and cakes.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 29,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 64,
+          "audioStartSec": 131.68
+        },
+        {
+          "id": "vstep-p3-t29-q05",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "What time does the concert end?",
+          "options": [
+            {
+              "key": "A",
+              "text": "10.10."
+            },
+            {
+              "key": "B",
+              "text": "10.15."
+            },
+            {
+              "key": "C",
+              "text": "10.20."
+            },
+            {
+              "key": "D",
+              "text": "9.50."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Buổi hòa nhạc kết thúc lúc 9 giờ 50 phút.",
+          "transcriptQuote": "the concert finishes earlier, at ten to ten.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 29,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 65,
+          "audioStartSec": 157.16
+        }
+      ],
+      "audioDurationSec": 161.938
+    },
+    {
+      "id": "vstep-p3-t31",
+      "title": "VSTEP Part 3 – Bài 31",
+      "source": {
+        "book": "Bộ bổ sung Nghe VSTEP",
+        "part": "Part 3",
+        "test": 31,
+        "items": "1,2,3,4,5"
+      },
+      "skill": "listening",
+      "level": "B2",
+      "audio": "audio/vstep-p3-t31.mp3",
+      "maxPlays": 0,
+      "questions": [
+        {
+          "id": "vstep-p3-t31-q01",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "What should readers do to really understand My life?",
+          "options": [
+            {
+              "key": "A",
+              "text": "read it very slowly."
+            },
+            {
+              "key": "B",
+              "text": "know about the writer’s life."
+            },
+            {
+              "key": "C",
+              "text": "read it with a picture."
+            },
+            {
+              "key": "D",
+              "text": "read the writer’s other books."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Để hiểu cuốn My life, người đọc nên đọc các cuốn khác của tác giả.",
+          "transcriptQuote": "some of it is difficult to understand if you haven’t read his other books.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 31,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 66,
+          "audioStartSec": 24.14
+        },
+        {
+          "id": "vstep-p3-t31-q02",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "Why does John go to London in Goodbye to the fields?",
+          "options": [
+            {
+              "key": "A",
+              "text": "his parents do not like the country,"
+            },
+            {
+              "key": "B",
+              "text": "his father has to be close to his work"
+            },
+            {
+              "key": "C",
+              "text": "his parents both come from the city."
+            },
+            {
+              "key": "D",
+              "text": "His parents want him to have better education."
+            }
+          ],
+          "answer": "B",
+          "explanation": "Gia đình chuyển đến London vì công việc của người bố.",
+          "transcriptQuote": "the family move to London because of his father’s job.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 31,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 67,
+          "audioStartSec": 41.86
+        },
+        {
+          "id": "vstep-p3-t31-q03",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "What information is NOT included in the A-Z of photography?",
+          "options": [
+            {
+              "key": "A",
+              "text": "Basic equipment in photography"
+            },
+            {
+              "key": "B",
+              "text": "how to take good pictures"
+            },
+            {
+              "key": "C",
+              "text": "Basic information about taking pictures."
+            },
+            {
+              "key": "D",
+              "text": "advanced information about photography."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Sách dành cho người mới bắt đầu, không cung cấp nội dung chuyên sâu.",
+          "transcriptQuote": "there’s not much advanced information here.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 31,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 68,
+          "audioStartSec": 79.48
+        },
+        {
+          "id": "vstep-p3-t31-q04",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "What information does readers get from Holidays in Europe?",
+          "options": [
+            {
+              "key": "A",
+              "text": "a small map."
+            },
+            {
+              "key": "B",
+              "text": "famous places."
+            },
+            {
+              "key": "C",
+              "text": "the main tourist areas."
+            },
+            {
+              "key": "D",
+              "text": "less common places."
+            }
+          ],
+          "answer": "D",
+          "explanation": "Sách giới thiệu những nơi nhỏ, ít quen thuộc ngoài các khu du lịch chính.",
+          "transcriptQuote": "describes lots of small places away from the main tourist areas.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 31,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 69,
+          "audioStartSec": 131.52
+        },
+        {
+          "id": "vstep-p3-t31-q05",
+          "type": "mcq",
+          "level": "B2",
+          "prompt": "For whom are next week’s programme useful?",
+          "options": [
+            {
+              "key": "A",
+              "text": "those who enjoy reading reports."
+            },
+            {
+              "key": "B",
+              "text": "those who are trying to save money."
+            },
+            {
+              "key": "C",
+              "text": "those who are planning to buy gifts."
+            },
+            {
+              "key": "D",
+              "text": "those who enjoy making friends."
+            }
+          ],
+          "answer": "C",
+          "explanation": "Chương trình tuần tới gợi ý tặng sách, phù hợp với người đang chọn quà.",
+          "transcriptQuote": "Next week, there’s a special report on giving books as presents",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Bộ bổ sung Nghe VSTEP",
+            "part": "Part 3",
+            "test": 31,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 70,
+          "audioStartSec": 144.2
+        }
+      ],
+      "audioDurationSec": 161.676
+    },
+    {
+      "id": "cam13-t1-s1-q01-05",
+      "title": "Cookery classes – Chặng 1",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 1,
+        "section": 1,
+        "items": "1-5"
+      },
+      "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t1-s1-q01-05.mp3",
+      "questions": [
+        {
+          "promptBefore": "The Food Studio — how to",
+          "promptAfter": "and cook with seasonal products",
+          "maxWords": 1,
+          "answers": [
+            "choose"
+          ],
+          "id": "cam13-t1-s1-q01",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "choose",
+          "transcriptQuote": "they also show you how to choose them.",
+          "explanation": "Khóa học hướng dẫn cách chọn sản phẩm theo mùa trước khi nấu.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 71,
+          "audioStartSec": 29.0
+        },
+        {
+          "promptBefore": "The Food Studio — also offers",
+          "promptAfter": "classes",
+          "maxWords": 1,
+          "answers": [
+            "private"
+          ],
+          "id": "cam13-t1-s1-q02",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "private",
+          "transcriptQuote": "And could I get a private lesson there?",
+          "explanation": "Người gọi hỏi về lớp riêng và được xác nhận là có.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 72,
+          "audioStartSec": 37.96
+        },
+        {
+          "promptBefore": "The Food Studio — clients who return get a",
+          "promptAfter": "discount",
+          "maxWords": 2,
+          "answers": [
+            "20 percent",
+            "twenty percent",
+            "20%"
+          ],
+          "id": "cam13-t1-s1-q03",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "20 percent",
+          "transcriptQuote": "they offer a discount of 20 percent if you return for a further class.",
+          "explanation": "Khách quay lại học được giảm 20%.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 73,
+          "audioStartSec": 55.94
+        },
+        {
+          "promptBefore": "Bond's Cookery School — food that is",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "healthy"
+          ],
+          "id": "cam13-t1-s1-q04",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "healthy",
+          "transcriptQuote": "They concentrate on teaching you to prepare healthy food",
+          "explanation": "Trường tập trung vào cách chế biến món ăn tốt cho sức khỏe.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 74,
+          "audioStartSec": 72.84
+        },
+        {
+          "promptBefore": "Bond's Cookery School — includes recipes to strengthen your",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "bones"
+          ],
+          "id": "cam13-t1-s1-q05",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "bones",
+          "transcriptQuote": "including ingredients that will help build up your bones and make them stronger",
+          "explanation": "Công thức sử dụng nguyên liệu giúp xương chắc khỏe.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 75,
+          "audioStartSec": 95.56
+        }
+      ],
+      "audioDurationSec": 102.604
+    },
+    {
+      "id": "cam13-t1-s1-q06-10",
+      "title": "Cookery classes – Chặng 2",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 1,
+        "section": 1,
+        "items": "6-10"
+      },
+      "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t1-s1-q06-10.mp3",
+      "questions": [
+        {
+          "promptBefore": "Bond's Cookery School — they have a free",
+          "promptAfter": "every Thursday",
+          "maxWords": 1,
+          "answers": [
+            "lecture"
+          ],
+          "id": "cam13-t1-s1-q06",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "lecture",
+          "transcriptQuote": "every Thursday evening they have a lecture at the school.",
+          "explanation": "Trường có buổi nói chuyện miễn phí vào tối thứ Năm.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "6"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 76,
+          "audioStartSec": 11.6
+        },
+        {
+          "promptBefore": "The",
+          "promptAfter": "Centre",
+          "maxWords": 1,
+          "answers": [
+            "Arretsa"
+          ],
+          "id": "cam13-t1-s1-q07",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "Arretsa",
+          "transcriptQuote": "It’s called the Arretsa Centre",
+          "explanation": "Tên trung tâm được đánh vần A-R-R-E-T-S-A.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "7"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 77,
+          "audioStartSec": 41.88
+        },
+        {
+          "promptBefore": "The Arretsa Centre — mainly",
+          "promptAfter": "food",
+          "maxWords": 1,
+          "answers": [
+            "vegetarian"
+          ],
+          "id": "cam13-t1-s1-q08",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "vegetarian",
+          "transcriptQuote": "they mostly specialise in vegetarian dishes.",
+          "explanation": "Trung tâm chủ yếu dạy các món chay.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "8"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 78,
+          "audioStartSec": 56.42
+        },
+        {
+          "promptBefore": "The Arretsa Centre — located near the",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "market"
+          ],
+          "id": "cam13-t1-s1-q09",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "market",
+          "transcriptQuote": "Is it just by the market?",
+          "explanation": "Trung tâm nằm ngay cạnh chợ.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "9"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 79,
+          "audioStartSec": 70.52
+        },
+        {
+          "promptBefore": "The Arretsa Centre — a special course in skills with a",
+          "promptAfter": "is sometimes available",
+          "maxWords": 1,
+          "answers": [
+            "knife"
+          ],
+          "id": "cam13-t1-s1-q10",
+          "type": "gap_fill",
+          "level": "B1",
+          "answer": "knife",
+          "transcriptQuote": "they also offer a special two-hour course in how to use a knife.",
+          "explanation": "Khóa học đặc biệt kéo dài hai giờ hướng dẫn kỹ năng dùng dao.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 1,
+            "section": 1,
+            "items": "10"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 80,
+          "audioStartSec": 78.2
+        }
+      ],
+      "audioDurationSec": 94.707
+    },
+    {
+      "id": "cam13-t2-s1-q01-05",
+      "title": "South City Cycling Club – Chặng 1",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 2,
+        "section": 1,
+        "items": "1-5"
+      },
+      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1+/B2",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t2-s1-q01-05.mp3",
+      "questions": [
+        {
+          "promptBefore": "Full membership costs $260; this covers cycling and",
+          "promptAfter": "all over Australia",
+          "maxWords": 1,
+          "answers": [
+            "races"
+          ],
+          "id": "cam13-t2-s1-q01",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "races",
+          "transcriptQuote": "that covers you not just for ordinary cycling but also for races both here in the city and also in other parts of Australia.",
+          "explanation": "Hội viên đầy đủ được tham gia cả đạp xe thông thường và các cuộc đua.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 81,
+          "audioStartSec": 16.12
+        },
+        {
+          "promptBefore": "Cost of membership includes the club fee and",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "insurance"
+          ],
+          "id": "cam13-t2-s1-q02",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "insurance",
+          "transcriptQuote": "They also provide insurance in case you have an accident",
+          "explanation": "Phí hội viên bao gồm bảo hiểm khi gặp tai nạn.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 82,
+          "audioStartSec": 64.76
+        },
+        {
+          "promptBefore": "The club kit is made by a company called",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "Jerriz"
+          ],
+          "id": "cam13-t2-s1-q03",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "Jerriz",
+          "transcriptQuote": "they’re called Jerriz. That’s J-E-R-R-I-Z.",
+          "explanation": "Tên công ty được đánh vần J-E-R-R-I-Z.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 83,
+          "audioStartSec": 102.48
+        },
+        {
+          "promptBefore": "Level B: speed about",
+          "promptAfter": "kph",
+          "maxWords": 1,
+          "answers": [
+            "25",
+            "twenty-five",
+            "twenty five"
+          ],
+          "id": "cam13-t2-s1-q04",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "25",
+          "transcriptQuote": "if you can do about 25 kilometres an hour, you’d probably be level B",
+          "explanation": "Nhóm B đi với tốc độ khoảng 25 km/giờ.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 84,
+          "audioStartSec": 139.96
+        },
+        {
+          "promptBefore": "Tuesdays at 5.30 am, meet at the",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "stadium"
+          ],
+          "id": "cam13-t2-s1-q05",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "stadium",
+          "transcriptQuote": "you meet at 5.30 am, and the meeting point’s the stadium",
+          "explanation": "Buổi sáng thứ Ba tập trung tại sân vận động.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 85,
+          "audioStartSec": 167.44
+        }
+      ],
+      "audioDurationSec": 177.5
+    },
+    {
+      "id": "cam13-t2-s1-q06-10",
+      "title": "South City Cycling Club – Chặng 2",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 2,
+        "section": 1,
+        "items": "6-10"
+      },
+      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1+/B2",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t2-s1-q06-10.mp3",
+      "questions": [
+        {
+          "promptBefore": "Thursdays at 5.30 am, meet at the entrance to the",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "park"
+          ],
+          "id": "cam13-t2-s1-q06",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "park",
+          "transcriptQuote": "they meet at the main gate to the park.",
+          "explanation": "Buổi sáng thứ Năm tập trung tại cổng chính công viên.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "6"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 86,
+          "audioStartSec": 6.68
+        },
+        {
+          "promptBefore": "Members often have",
+          "promptAfter": "together afterwards",
+          "maxWords": 1,
+          "answers": [
+            "coffee"
+          ],
+          "id": "cam13-t2-s1-q07",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "coffee",
+          "transcriptQuote": "the members often go somewhere for coffee afterwards",
+          "explanation": "Các thành viên thường đi uống cà phê sau buổi đạp xe.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "7"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 87,
+          "audioStartSec": 37.54
+        },
+        {
+          "promptBefore": "There is not always a",
+          "promptAfter": "with the group on these rides",
+          "maxWords": 1,
+          "answers": [
+            "leader"
+          ],
+          "id": "cam13-t2-s1-q08",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "leader",
+          "transcriptQuote": "And does each ride have a leader?",
+          "explanation": "Nhóm đôi khi có người dẫn, nhưng không phải buổi nào cũng có.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "8"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 88,
+          "audioStartSec": 52.38
+        },
+        {
+          "promptBefore": "Check and print the",
+          "promptAfter": "on the website beforehand",
+          "maxWords": 1,
+          "answers": [
+            "route"
+          ],
+          "id": "cam13-t2-s1-q09",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "route",
+          "transcriptQuote": "the route for each ride is clearly marked.",
+          "explanation": "Cần xem và in lộ trình trên website câu lạc bộ.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "9"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 89,
+          "audioStartSec": 69.34
+        },
+        {
+          "promptBefore": "Bikes must have",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "lights"
+          ],
+          "id": "cam13-t2-s1-q10",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "lights",
+          "transcriptQuote": "you need to make sure your bike’s got lights.",
+          "explanation": "Xe cần có đèn vì mùa đông nhóm xuất phát trước bình minh.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 2,
+            "section": 1,
+            "items": "10"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 90,
+          "audioStartSec": 98.0
+        }
+      ],
+      "audioDurationSec": 110.722
+    },
+    {
+      "id": "cam13-t3-s1-q01-05",
+      "title": "Moving to Banford City – Chặng 1",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 3,
+        "section": 1,
+        "items": "1-5"
+      },
+      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1+/B2",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t3-s1-q01-05.mp3",
+      "questions": [
+        {
+          "promptBefore": "Accommodation — average rent: £",
+          "promptAfter": "a month",
+          "maxWords": 1,
+          "answers": [
+            "850"
+          ],
+          "id": "cam13-t3-s1-q01",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "850",
+          "transcriptQuote": "you should be able to get something reasonable for 850 pounds per month.",
+          "explanation": "Mức thuê hợp lý được nêu là 850 bảng mỗi tháng; 900 là mức nên tránh vượt quá.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "1"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 91,
+          "audioStartSec": 39.84
+        },
+        {
+          "promptBefore": "Linda travels to work by",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "bike",
+            "bicycle"
+          ],
+          "id": "cam13-t3-s1-q02",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "bike",
+          "transcriptQuote": "I go by bike.",
+          "explanation": "Linda đi làm bằng xe đạp.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "2"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 92,
+          "audioStartSec": 76.54
+        },
+        {
+          "promptBefore": "Limited",
+          "promptAfter": "in city centre",
+          "maxWords": 1,
+          "answers": [
+            "parking"
+          ],
+          "id": "cam13-t3-s1-q03",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "parking",
+          "transcriptQuote": "there’s hardly any parking.",
+          "explanation": "Trung tâm thành phố có rất ít chỗ đỗ xe.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "3"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 93,
+          "audioStartSec": 96.08
+        },
+        {
+          "promptBefore": "Trains to London every",
+          "promptAfter": "minutes",
+          "maxWords": 1,
+          "answers": [
+            "30",
+            "thirty"
+          ],
+          "id": "cam13-t3-s1-q04",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "30",
+          "transcriptQuote": "There’s a fast train every 30 minutes which only takes 45 minutes.",
+          "explanation": "Tàu chạy mỗi 30 phút; 45 phút là thời gian di chuyển.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "4"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 94,
+          "audioStartSec": 115.92
+        },
+        {
+          "promptBefore": "Poor train service at",
+          "promptAfter": "",
+          "maxWords": 1,
+          "answers": [
+            "weekends",
+            "weekend"
+          ],
+          "id": "cam13-t3-s1-q05",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "weekends",
+          "transcriptQuote": "It’s weekends that are a problem.",
+          "explanation": "Dịch vụ tàu gặp vấn đề vào cuối tuần do thi công.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "5"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 95,
+          "audioStartSec": 133.34
+        }
+      ],
+      "audioDurationSec": 157.62
+    },
+    {
+      "id": "cam13-t3-s1-q06-10",
+      "title": "Moving to Banford City – Chặng 2",
+      "source": {
+        "book": "Cambridge IELTS 13",
+        "test": 3,
+        "section": 1,
+        "items": "6-10"
+      },
+      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+      "skill": "listening",
+      "level": "B1+/B2",
+      "maxPlays": 0,
+      "audio": "audio/cam13-t3-s1-q06-10.mp3",
+      "questions": [
+        {
+          "promptBefore": "New",
+          "promptAfter": "opened recently",
+          "maxWords": 1,
+          "answers": [
+            "cinema"
+          ],
+          "id": "cam13-t3-s1-q06",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "cinema",
+          "transcriptQuote": "a brand new cinema which has only been open a couple of months.",
+          "explanation": "Rạp chiếu phim mới mở được vài tháng.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "6"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 96,
+          "audioStartSec": 3.94
+        },
+        {
+          "promptBefore": "",
+          "promptAfter": "has excellent reputation",
+          "maxWords": 1,
+          "answers": [
+            "hospital"
+          ],
+          "id": "cam13-t3-s1-q07",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "hospital",
+          "transcriptQuote": "the hospital here is one of the best in the country.",
+          "explanation": "Bệnh viện được đánh giá thuộc nhóm tốt nhất cả nước.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "7"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 97,
+          "audioStartSec": 24.0
+        },
+        {
+          "promptBefore": "Good",
+          "promptAfter": "on Bridge Street",
+          "maxWords": 1,
+          "answers": [
+            "dentist"
+          ],
+          "id": "cam13-t3-s1-q08",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "dentist",
+          "transcriptQuote": "my dentist too in Bridge Street",
+          "explanation": "Linda giới thiệu nha sĩ ở Bridge Street.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "8"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 98,
+          "audioStartSec": 38.14
+        },
+        {
+          "promptBefore": "Meet Linda on",
+          "promptAfter": "after 5.30 pm",
+          "maxWords": 1,
+          "answers": [
+            "Thursday"
+          ],
+          "id": "cam13-t3-s1-q09",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "Thursday",
+          "transcriptQuote": "Either a Tuesday or Thursday is good for me, after 5.30.",
+          "explanation": "Linda rảnh thứ Ba hoặc thứ Năm, nhưng Matt chọn thứ Năm.",
+          "quoteSource": "pdf",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "9"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "number": 99,
+          "audioStartSec": 78.58
+        },
+        {
+          "promptBefore": "In the",
+          "promptAfter": "opposite the station",
+          "maxWords": 1,
+          "answers": [
+            "cafe",
+            "café"
+          ],
+          "id": "cam13-t3-s1-q10",
+          "type": "gap_fill",
+          "level": "B1+/B2",
+          "answer": "cafe",
+          "transcriptQuote": "I'll meet you in the cafe outside.",
+          "explanation": "Hai người hẹn ở quán cà phê đối diện ga. Đáp án theo answer key; trích dẫn minh họa từ ASR do thiếu trang scan.",
+          "quoteSource": "asr",
+          "source": {
+            "book": "Cambridge IELTS 13",
+            "test": 3,
+            "section": 1,
+            "items": "10"
+          },
+          "status": "reviewed",
+          "tags": [
+            "detail"
+          ],
+          "quoteNote": "trang in 109 thiếu trong bản scan",
+          "number": 100,
+          "audioStartSec": 99.9
+        }
+      ],
+      "audioDurationSec": 121.396
+    }
+  ]
+}

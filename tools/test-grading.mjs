@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import {grade,normalize} from '../assets/grading.js';
+assert.equal(normalize('  Twenty   percent. '),'twenty percent');
+const q={type:'gap_fill',answers:['cafe','café']};
+assert.equal(grade(q,' café. ').correct,true);
+assert.deepEqual(grade(q,''),{correct:false,typo:false});
+assert.equal(grade(q,'caff').typo,true);
+assert.equal(grade(q,'caffee').correct,false);
+assert.equal(grade({type:'gap_fill',answers:['20 percent','twenty percent','20%']},'20%').correct,true);
+assert.equal(grade({type:'mcq',answer:'B'},'A').correct,false);
+assert.equal(grade({type:'true_false',answer:'TRUE'},'FALSE').correct,false);
+assert.equal(grade({type:'gap_fill',answers:['25','twenty-five','twenty five']},'twenty five').correct,true);
+console.log('PASS: normalization, valid variants, one-character tolerance, wrong answers, blank answers.');

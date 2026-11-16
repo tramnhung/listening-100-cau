@@ -1,0 +1,10 @@
+*.pdf
+source_audio/
+__pycache__/
+.venv/
+*.tmp
+tools/.audio-work/
+node_modules/
+source-extraction-local/
+audio-part1-clean/
+*.log
