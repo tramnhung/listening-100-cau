@@ -45,9 +45,9 @@ Sinh viên làm xong các chặng rồi mở `ket-qua.html`. Khối **Tạo mã 
 
 Mã chứa toàn bộ chặng đã nộp/chấm, cả chặng làm sai hết; không chứa bài đang nhập nhưng chưa nộp. Mỗi chặng giữ setId, đúng/tổng, danh sách câu sai và thời gian chấm gần nhất. Có thêm tổng đúng/100 và đã làm/100. Luyện lại câu sai cập nhật kết quả cả chặng. Không tự gửi thông tin lên dịch vụ nào; sinh viên tự copy mã gửi cô qua Zalo.
 
-Trang giảng viên: https://tramnhung.github.io/listening-100-cau/bangdiem.html — không có link từ trang chủ sinh viên. Dán mỗi mã một dòng, chọn **Nhập mã vào bảng**. Nhận cả mã tổng kết `L100.2` và mã từng chặng `L100.1` cũ. Mã hỏng báo rõ dòng, mã trùng hệt được báo và bỏ qua; mã hợp lệ khác vẫn nhập. Mỗi mã v2 tách ra các lượt chặng cho bảng chi tiết và CSV.
+Trang giảng viên: https://tramnhung.github.io/listening-100-cau/bangdiem.html — không có link từ trang chủ sinh viên. Dán mỗi mã một dòng, chọn **Nhập mã vào bảng**. Nhận mã tổng kết `L100.3`, `L100.2` và mã từng chặng `L100.1` cũ. Mã hỏng báo rõ dòng, mã trùng hệt được báo và bỏ qua; mã hợp lệ khác vẫn nhập. Mỗi mã v2 tách ra các lượt chặng cho bảng chi tiết và CSV.
 
-Tổng hợp theo MSSV (trim, không phân biệt hoa thường), lấy lần mới nhất của từng chặng theo thời gian làm bài trong mã. Cùng thời gian thì lấy mã nhập sau. Không cộng lặp điểm khi nhập lại mã tổng kết hoặc trộn với mã cũ. Hiện số đúng/100 và đã làm/100. Thời gian hiển thị theo Việt Nam. Bảng tự lưu localStorage để nhập nhiều đợt, có nút Xóa hết kèm xác nhận.
+Tổng hợp theo MSSV (trim, không phân biệt hoa thường), lấy lần mới nhất của từng chặng theo thời điểm nộp bài trong mã. Cùng thời gian thì lấy mã nhập sau. Không cộng lặp điểm khi nhập lại mã tổng kết hoặc trộn với mã cũ. Hiện số đúng/100 và đã làm/100. Thời gian hiển thị theo Việt Nam. Bảng tự lưu localStorage để nhập nhiều đợt, có nút Xóa hết kèm xác nhận.
 
 Hai nút **Xuất CSV chi tiết / tổng hợp** xuất UTF-8 BOM, dấu phẩy phân cột, bảo vệ ô khỏi bị diễn giải thành công thức. Nếu Excel không tự tách cột theo thiết lập vùng, dùng Data → From Text/CSV và chọn dấu phẩy. Khi localStorage bị chặn, trang báo rõ; giữ mã gốc và CSV để dự phòng.
 
@@ -71,3 +71,11 @@ Mỗi chặng có hướng dẫn tiếng Việt cho từng dạng câu xuất hi
 Sáu chặng điền từ (Bài 12–17) dùng `gapNotes.heading` và `gapNotes.paragraphs`: một khối ghi chú liên kết bằng câu văn mới, do người biên soạn diễn đạt lại theo nội dung nghe; không sao chép trang ghi chú Cambridge. Các token `{{71}}`…`{{100}}` biến thành ô trống có số ngay trong câu. Mỗi ô xuất hiện một lần, đúng thứ tự. Đáp án, các biến thể, maxWords, trích dẫn và mốc nghe giữ nguyên. Ô 73 nhắc viết số kèm ký hiệu % (ví dụ minh họa khác đáp án), phù hợp dạng một số và bộ đáp án có sẵn.
 
 Sau nộp, khối ghi chú vẫn giữ nguyên, ô đúng/sai được đánh dấu và lời giải riêng xuất hiện bên dưới. Khi luyện lại câu sai, vẫn hiện cả ghi chú; ô đã đúng giữ câu trả lời trước đó và chỉ đọc để không mất ngữ cảnh.
+
+## Thời gian làm bài và L100.3
+
+Mỗi chặng bắt đầu đếm từ thao tác đầu tiên trong bài, dừng khi nộp; chỉ cộng khi tab hiện (`document.hidden === false`). Lưu tiến độ mỗi giây và khi chuyển tab/rời trang; reload tiếp tục thời gian đã lưu, không cộng khoảng đóng trang. Tối đa 60 phút/chặng. Làm lại dùng thời gian lượt mới nhất; “Làm lại từ đầu” xóa cả bộ đếm. localStorage bị chặn sẽ báo không lưu được.
+
+Kết quả chặng hiện phút/giây; Kết quả tổng hiện từng chặng và tổng thời gian. L100.3 giữ DEFLATE + base64url + CRC32, thêm số giây nguyên vào cuối mỗi hàng chặng: `[chỉ số, bitmask sai, lệch thời điểm nộp, số giây]`. Giá trị null dành cho kết quả cũ chưa đo. Bảng điểm và cả hai CSV có thời gian dạng phút:giây; mã L100.1/L100.2 vẫn đọc được, ô thời gian trống. Tổng để trống nếu có lượt được tính điểm thiếu thời gian, tránh thể hiện tổng không đầy đủ.
+
+Thời gian chỉ để tham khảo; sinh viên biết kỹ thuật vẫn sửa được trước khi tạo mã, không dùng làm điểm chính thức. Fixture kiểm thử đủ 100 câu / 17 chặng, 83 đúng, có thời gian từng chặng tạo mã **282 ký tự**; độ dài phụ thuộc tên/lớp, kết quả và thời điểm, không phải giới hạn cố định. Phép đo này dùng dữ liệu test, không phải lượt làm lại 100 câu trên trình duyệt.

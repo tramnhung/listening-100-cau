@@ -11,3 +11,5 @@ assert.equal(grade({type:'mcq',answer:'B'},'A').correct,false);
 assert.equal(grade({type:'true_false',answer:'TRUE'},'FALSE').correct,false);
 assert.equal(grade({type:'gap_fill',answers:['25','twenty-five','twenty five']},'twenty five').correct,true);
 console.log('PASS: normalization, valid variants, one-character tolerance, wrong answers, blank answers.');
+
+await import('./test-attempt-timer.mjs');

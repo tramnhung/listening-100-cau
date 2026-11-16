@@ -52,3 +52,15 @@
 - Ghép các đoạn VSTEP ngắn theo nhóm để mỗi set có 5–10 câu và audio đạt tối thiểu 45 giây; khoảng nối 1,5 giây. Các đoạn trên 150 giây vẫn dưới mức tối đa 180 giây để giữ đủ ngữ cảnh.
 - Tái sử dụng Part 1 đã làm sạch. Riêng đoạn cắt A được cân âm lại từ bản sạch để đạt ngưỡng mean volume; không xử lý lại audio gốc.
 - Mọi mốc nghe tính trên MP3 cuối cùng. Cambridge Test 3 câu 7 dò bổ sung theo đoạn liền trước/sau vì ASR bỏ sót cụm “hospital”; đặt mốc 24 giây trên đoạn cắt để nghe từ trước thông tin cần thiết.
+
+## Thời gian làm bài / L100.3 — 16/11/2026
+
+- [x] Làm thật trên trình duyệt local: Bài 3 đúng 5/5, 1:31; Bài 12 đúng 5/5, 0:10. Tổng 10/100, đã làm 10/100, thời gian 1:41. Tạo mã từ Kết quả, nhập Bảng điểm: từng chặng và tổng khớp, không có câu sai.
+- [x] Reload giữa bài giữ thời gian đã lưu. Bộ test clock kiểm lần đầu chưa thao tác, ẩn/hiện, reload không cộng khoảng offline, dừng nộp, trần 3600 giây.
+- [x] Mô phỏng document.hidden và visibilitychange trong trang thử riêng: chờ thật 30 giây, bộ đếm giữ 1:29; tiếp tục làm và nộp ở 1:31. Trang thử đã xóa khỏi repo.
+- [ ] Chưa xác nhận thao tác ẩn tab thật: trình duyệt IAB kiểm thử luôn trả document.hidden=false dù đổi tab/ẩn bề mặt. Không coi mô phỏng ở trên là kiểm chứng ẩn tab thật.
+- [x] Nhập mã L100.2 cũ TEST-A cùng mã L100.3 TEST-TIME: tách đúng 2 sinh viên; mã cũ hiện đủ 17 chặng, ô thời gian chi tiết/tổng hợp trống.
+- [x] Xuất bằng cả hai nút CSV trên giao diện, đọc lại file tải xuống: UTF-8 BOM, tiếng Việt đúng; cột thời gian chi tiết 1:31 và 0:10, tổng 1:41; dòng mã cũ để trống.
+- [x] Unit test v1/v2/v3, checksum/mã cắt, thời gian nguyên 0..3600, thiếu thời gian, gộp lượt mới nhất. Fixture 100 câu có thời gian: 282 ký tự. Console trình duyệt không có lỗi.
+
+Thời gian tham khảo, có thể bị sinh viên sửa bằng kỹ thuật; không phải cơ chế chống gian lận. Tổng trống khi dữ liệu cũ thiếu thời gian.

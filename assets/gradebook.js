@@ -1,18 +1,20 @@
+import {durationText} from './attempt-timer.js';
 import {decodeResult,expandResult,summarize,csv} from './result-code.js';
 const KEY='listening100-gradebook-v1',main=document.querySelector('main');
 const node=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 const time=r=>new Date(r.time*1000).toLocaleString('vi-VN',{timeZone:'Asia/Ho_Chi_Minh'});
-const detailHeaders=['Họ tên','MSSV','Lớp','Chặng','Đúng/Tổng','Phần trăm','Câu sai','Thời gian (Việt Nam)'];
-const detailRow=r=>[r.hoTen,r.mssv,r.lop,r.setTitle,`${r.dung}/${r.tong}`,`${Math.round(1000*r.dung/r.tong)/10}%`,r.cauSai.join(', '),time(r)];
-const sumHeaders=['Họ tên','MSSV','Lớp','Đúng / 100','Đã làm / 100','Số chặng','Phần trăm trên 100 câu'];
-const sumRow=r=>[r.hoTen,r.mssv,r.lop,`${r.dung}/100`,`${r.done}/100`,r.sets,`${r.dung}%`];
+const detailHeaders=['Họ tên','MSSV','Lớp','Chặng','Đúng/Tổng','Phần trăm','Câu sai','Thời gian làm','Thời điểm nộp (Việt Nam)'];
+const detailRow=r=>[r.hoTen,r.mssv,r.lop,r.setTitle,`${r.dung}/${r.tong}`,`${Math.round(1000*r.dung/r.tong)/10}%`,r.cauSai.join(', '),durationText(r.durationSec),time(r)];
+const sumHeaders=['Họ tên','MSSV','Lớp','Đúng / 100','Đã làm / 100','Số chặng','Phần trăm trên 100 câu','Tổng thời gian làm'];
+const sumRow=r=>[r.hoTen,r.mssv,r.lop,`${r.dung}/100`,`${r.done}/100`,r.sets,`${r.dung}%`,durationText(r.totalDurationSec)];
 function table(headers,rows,label){const wrap=node('div');wrap.className='table-scroll';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label',label);const t=node('table'),head=node('thead'),tr=node('tr');for(const h of headers){const th=node('th',h);th.scope='col';tr.append(th);}head.append(tr);const body=node('tbody');for(const row of rows){const tr=node('tr');for(const value of row)tr.append(node('td',value));body.append(tr);}t.append(head,body);wrap.append(t);return wrap;}
 function download(name,rows){const blob=new Blob([csv(rows)],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 async function init(){
   let sets;try{const response=await fetch('./data/questions.json');if(!response.ok)throw Error();sets=(await response.json()).sets;}catch{main.append(node('p','Không tải được danh sách chặng. Vui lòng tải lại trang.'));return;}
   let records=[],codes=[];
   main.append(node('p','DÀNH CHO GIẢNG VIÊN'),node('h1','Bảng điểm lớp'),node('p','Mã này không chống gian lận. Sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã, nên dùng làm sổ theo dõi luyện tập, không phải điểm chính thức.'),node('p','Mã chứa thông tin cá nhân, không được mã hóa bảo mật. Dữ liệu chỉ được xử lý và lưu trên trình duyệt này, không tự gửi lên dịch vụ nào. Giữ riêng mã và file CSV của lớp.'));
-  main.append(node('p','Nhận mã tổng kết L100.2 (một mã cho toàn bộ chặng đã làm của sinh viên) và mã từng chặng L100.1 cũ.'));
+  main.append(node('p','Nhận mã tổng kết L100.3 (có thời gian làm), L100.2 (một mã cho toàn bộ chặng đã làm của sinh viên) và mã từng chặng L100.1 cũ.'));
+  main.append(node('p','Thời gian làm chỉ để tham khảo; sinh viên rành kỹ thuật vẫn sửa được trước khi tạo mã. Chỉ tính thời gian tab đang hiện, tối đa 60 phút mỗi chặng. Mã cũ không có thời gian được để trống; tổng thời gian để trống nếu còn chặng thiếu dữ liệu.'));
   main.append(node('p','Tổng hợp theo MSSV, lấy lần mới nhất của từng chặng theo thời gian trong mã. Nếu cùng thời gian, lấy mã nhập sau. Mã trùng hệt được bỏ qua và báo số lượng. Câu chưa làm không được tính đúng; tổng điểm tính trên 100 câu.'));
   const label=node('label','Dán mã nộp bài — mỗi dòng một mã'),input=node('textarea');input.rows=7;input.id='codes';input.spellcheck=false;label.htmlFor='codes';main.append(label,input);
   const add=node('button','Nhập mã vào bảng');add.className='primary';

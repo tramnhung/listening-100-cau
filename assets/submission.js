@@ -8,7 +8,7 @@ export function setupSubmission(main,data,memory){
   let profile={};try{profile=JSON.parse(localStorage.getItem('listening100-profile-v2'))||JSON.parse(localStorage.getItem('listening100-codes-v1'))?.profile||JSON.parse(localStorage.getItem('listening100-submission-v1'))?.profile||{};}catch{warning.textContent='Không đọc được thông tin đã lưu. Em có thể nhập lại và tạo mã trong trang này.';warning.hidden=false;}
   for(const [key,label,max] of [['hoTen','Họ tên',100],['mssv','MSSV',30],['lop','Lớp',50]]){const wrap=node('label',label),input=node('input');input.type='text';input.name=key;input.required=true;input.maxLength=max;input.value=profile[key]||'';wrap.append(input);form.append(wrap);}
   const attempts=data.sets.filter(s=>memory.sets[s.id]&&s.questions.every(q=>memory.responses[q.id]));
-  const results=attempts.map(s=>({setId:s.id,tong:s.questions.length,dung:s.questions.filter(q=>memory.responses[q.id].correct).length,cauSai:s.questions.filter(q=>!memory.responses[q.id].correct).map(q=>q.number),time:Math.floor(Date.parse(memory.sets[s.id].completedAt)/1000)}));
+  const results=attempts.map(s=>({setId:s.id,tong:s.questions.length,dung:s.questions.filter(q=>memory.responses[q.id].correct).length,cauSai:s.questions.filter(q=>!memory.responses[q.id].correct).map(q=>q.number),durationSec:memory.sets[s.id].durationSec??null,time:Math.floor(Date.parse(memory.sets[s.id].completedAt)/1000)}));
   const correct=results.reduce((n,r)=>n+r.dung,0),done=results.reduce((n,r)=>n+r.tong,0);
   section.append(node('p',`${attempts.length} chặng · ${correct}/100 câu đúng · ${done}/100 câu đã làm`));
   const create=node('button','Tạo mã');create.type='submit';create.className='primary';create.disabled=!results.length;form.append(create);
