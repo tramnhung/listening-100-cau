@@ -39,26 +39,24 @@ Nguồn nằm ngoài repo, đường dẫn tương đối trong manifest. Script
 
 Nội dung và audio thuộc các tác giả, nhà xuất bản tương ứng; dùng cho học tập trong lớp. Repo không chứa PDF, audio gốc, transcript đầy đủ hay mô hình ASR.
 
-## Mã nộp bài và bảng điểm lớp
+## Một mã tổng kết cho toàn bộ bài làm
 
-Trang giảng viên: https://tramnhung.github.io/listening-100-cau/bangdiem.html
+Sinh viên làm xong các chặng rồi mở `ket-qua.html`. Khối **Tạo mã nộp bài** lấy Họ tên / MSSV / Lớp đã lưu, cho sửa trước khi bấm **Tạo mã**, có **Copy mã** và số ký tự. Trang làm bài chỉ nhắc sang Kết quả, không tạo mã theo từng chặng nữa. Nếu làm thêm hoặc sửa kết quả, tạo lại một mã tổng kết mới để thay mã trước; không khóa sinh viên sau lần bấm đầu.
 
-Sinh viên nhập Họ tên / MSSV / Lớp, làm bài, rồi bấm **Tạo mã nộp bài** và **Copy mã** để tự gửi qua Zalo. Không có endpoint, tài khoản dịch vụ hay thao tác gửi thông tin tự động. Form nhớ thông tin trên trình duyệt và cho sửa lại. Nếu không lưu được, trang nhắc giữ trang mở và copy mã trước khi rời trang.
+Mã chứa toàn bộ chặng đã nộp/chấm, cả chặng làm sai hết; không chứa bài đang nhập nhưng chưa nộp. Mỗi chặng giữ setId, đúng/tổng, danh sách câu sai và thời gian chấm gần nhất. Có thêm tổng đúng/100 và đã làm/100. Luyện lại câu sai cập nhật kết quả cả chặng. Không tự gửi thông tin lên dịch vụ nào; sinh viên tự copy mã gửi cô qua Zalo.
 
-Giảng viên giữ riêng địa chỉ `bangdiem.html` (không có liên kết từ trang chủ sinh viên). Dán mỗi mã một dòng rồi chọn **Nhập mã vào bảng**. Mã hỏng báo rõ số dòng; mã hợp lệ vẫn được nhập, mã trùng hệt được đếm và bỏ qua. Bảng tự lưu localStorage để nhập nhiều đợt, có **Xóa hết bảng điểm** kèm xác nhận. Có hai nút xuất CSV chi tiết và tổng hợp, UTF-8 BOM để Excel đọc tiếng Việt, dấu phẩy phân cột, có bảo vệ ô khỏi bị diễn giải thành công thức. Nếu Excel theo thiết lập vùng không tự tách cột, dùng Data → From Text/CSV và chọn dấu phẩy.
+Trang giảng viên: https://tramnhung.github.io/listening-100-cau/bangdiem.html — không có link từ trang chủ sinh viên. Dán mỗi mã một dòng, chọn **Nhập mã vào bảng**. Nhận cả mã tổng kết `L100.2` và mã từng chặng `L100.1` cũ. Mã hỏng báo rõ dòng, mã trùng hệt được báo và bỏ qua; mã hợp lệ khác vẫn nhập. Mỗi mã v2 tách ra các lượt chặng cho bảng chi tiết và CSV.
 
-Bảng chi tiết giữ từng lượt; tổng hợp theo MSSV (bỏ khoảng trắng đầu/cuối, không phân biệt hoa thường), lấy thời gian mới nhất của từng chặng; nếu cùng thời gian, lấy mã nhập sau. Không cộng lặp điểm khi nộp lại. Tổng hợp hiện số đúng/100 và số câu đã làm/100. Khi sinh viên luyện lại câu sai, mã chứa kết quả cập nhật của **cả chặng**, không chỉ các câu luyện lại.
+Tổng hợp theo MSSV (trim, không phân biệt hoa thường), lấy lần mới nhất của từng chặng theo thời gian làm bài trong mã. Cùng thời gian thì lấy mã nhập sau. Không cộng lặp điểm khi nhập lại mã tổng kết hoặc trộn với mã cũ. Hiện số đúng/100 và đã làm/100. Thời gian hiển thị theo Việt Nam. Bảng tự lưu localStorage để nhập nhiều đợt, có nút Xóa hết kèm xác nhận.
 
-Mã phiên bản `L100.1` gồm mảng JSON gọn: họ tên, MSSV, lớp, setId, số câu, số đúng, danh sách số câu sai, thời gian chấm bài (Unix giây). Dữ liệu được nén DEFLATE, base64url và checksum CRC32. Mã mẫu kiểm thử dài 123–130 ký tự. Cần trình duyệt hiện đại có CompressionStream/DecompressionStream. Thời gian hiển thị trên bảng theo Việt Nam.
+Hai nút **Xuất CSV chi tiết / tổng hợp** xuất UTF-8 BOM, dấu phẩy phân cột, bảo vệ ô khỏi bị diễn giải thành công thức. Nếu Excel không tự tách cột theo thiết lập vùng, dùng Data → From Text/CSV và chọn dấu phẩy. Khi localStorage bị chặn, trang báo rõ; giữ mã gốc và CSV để dự phòng.
 
-**Mã này không chống gian lận:** sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã, nên dùng làm sổ theo dõi luyện tập, không phải điểm chính thức. Checksum chỉ phát hiện lỗi sao chép; không phải chữ ký hay mã hóa bảo mật. Mã chứa thông tin cá nhân, chỉ chia sẻ cho giảng viên. Trang bảng điểm không yêu cầu đăng nhập; địa chỉ riêng không phải cơ chế phân quyền. Dữ liệu lớp chỉ nằm trên trình duyệt giảng viên; nên giữ mã gốc và xuất CSV dự phòng.
+### Định dạng L100.2
 
-Kiểm thử:
+DEFLATE + base64url + CRC32 như v1. Mảng gọn `[họ tên, MSSV, lớp, thời gian gốc, tổng đúng, đã làm, các chặng]`; mỗi chặng là `[chỉ số, bitmask câu sai, độ lệch thời gian]`. Đúng/tổng và setId được khôi phục chính xác từ danh mục cố định `CODE_SETS` trong `result-code.js`; chỉ số không được sắp lại hoặc tái sử dụng. Chỉ số/bitmask không hợp lệ, chặng trùng, tổng điểm sai, checksum sai đều bị từ chối. Bitmask thay danh sách số câu dài; thời gian tương đối giảm độ dài mã. Cần trình duyệt hiện đại hỗ trợ CompressionStream/DecompressionStream.
 
-```sh
-node tools/test-result-code.mjs
-node tools/test-grading.mjs
-python tools/serve.py --directory . --port 8768
-```
+**Độ dài đo thực tế: 220 ký tự** cho 100 câu / 17 chặng, 83 đúng / 17 sai, tên “Sinh viên thử A”, MSSV “TEST-A”, lớp “Lớp thử”. Đây không phải giới hạn cố định: tên/lớp dài hơn và thời gian làm rải nhiều ngày có thể làm mã dài hơn.
 
-Mở trang làm bài rồi bảng điểm trên cùng server. Test tự động kiểm tiếng Việt, round-trip, mã cắt/mã đổi checksum, dữ liệu không hợp lệ, tổng hợp 3 mã/2 sinh viên, nộp lại cùng chặng và CSV. Không dùng dịch vụ ngoài. Phần triển khai Google đã hủy; không cần cấu hình gì thêm.
+**Mã không chống gian lận:** sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã; dùng làm sổ theo dõi luyện tập, không phải điểm chính thức. Checksum chỉ phát hiện lỗi sao chép, không phải chữ ký hay mã hóa bảo mật. Mã có thông tin cá nhân, chỉ gửi giảng viên. Địa chỉ bảng điểm riêng không phải cơ chế phân quyền; dữ liệu lớp nằm trên trình duyệt giảng viên.
+
+Kiểm thử: `node tools/test-result-code.mjs`, `node tools/test-grading.mjs`; chạy local bằng `python tools/serve.py --directory . --port 8770`. Bộ test bao gồm v1/v2, 100 câu, mã cắt/checksum, Unicode, gộp 2 sinh viên, không cộng trùng và CSV. Không cần endpoint hoặc tài khoản dịch vụ.

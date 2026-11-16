@@ -1,4 +1,4 @@
-import {decodeResult,validateSet,summarize,csv} from './result-code.js';
+import {decodeResult,expandResult,summarize,csv} from './result-code.js';
 const KEY='listening100-gradebook-v1',main=document.querySelector('main');
 const node=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
 const time=r=>new Date(r.time*1000).toLocaleString('vi-VN',{timeZone:'Asia/Ho_Chi_Minh'});
@@ -12,6 +12,7 @@ async function init(){
   let sets;try{const response=await fetch('./data/questions.json');if(!response.ok)throw Error();sets=(await response.json()).sets;}catch{main.append(node('p','Không tải được danh sách chặng. Vui lòng tải lại trang.'));return;}
   let records=[],codes=[];
   main.append(node('p','DÀNH CHO GIẢNG VIÊN'),node('h1','Bảng điểm lớp'),node('p','Mã này không chống gian lận. Sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã, nên dùng làm sổ theo dõi luyện tập, không phải điểm chính thức.'),node('p','Mã chứa thông tin cá nhân, không được mã hóa bảo mật. Dữ liệu chỉ được xử lý và lưu trên trình duyệt này, không tự gửi lên dịch vụ nào. Giữ riêng mã và file CSV của lớp.'));
+  main.append(node('p','Nhận mã tổng kết L100.2 (một mã cho toàn bộ chặng đã làm của sinh viên) và mã từng chặng L100.1 cũ.'));
   main.append(node('p','Tổng hợp theo MSSV, lấy lần mới nhất của từng chặng theo thời gian trong mã. Nếu cùng thời gian, lấy mã nhập sau. Mã trùng hệt được bỏ qua và báo số lượng. Câu chưa làm không được tính đúng; tổng điểm tính trên 100 câu.'));
   const label=node('label','Dán mã nộp bài — mỗi dòng một mã'),input=node('textarea');input.rows=7;input.id='codes';input.spellcheck=false;label.htmlFor='codes';main.append(label,input);
   const add=node('button','Nhập mã vào bảng');add.className='primary';
@@ -22,12 +23,12 @@ async function init(){
   const tables=node('section');main.append(status,errors,storage,tables);
   function persist(){try{localStorage.setItem(KEY,JSON.stringify(codes));storage.hidden=true;}catch{storage.textContent='Không lưu được bảng điểm trong trình duyệt. Hãy xuất CSV và giữ lại mã gốc trước khi đóng trang.';storage.hidden=false;}}
   function render(){tables.replaceChildren();exportDetail.disabled=exportSum.disabled=!records.length;clear.disabled=!records.length;
-    const summary=summarize(records);tables.append(node('h2',`Tổng hợp · ${summary.length} sinh viên`),table(sumHeaders,summary.map(sumRow),'Bảng tổng hợp'),node('h2',`Chi tiết · ${records.length} mã`),table(detailHeaders,records.map(detailRow),'Bảng chi tiết'));
+    const summary=summarize(records);tables.append(node('h2',`Tổng hợp · ${summary.length} sinh viên`),table(sumHeaders,summary.map(sumRow),'Bảng tổng hợp'),node('h2',`Chi tiết · ${records.length} lượt chặng / ${codes.length} mã`),table(detailHeaders,records.map(detailRow),'Bảng chi tiết'));
   }
   async function accept(lines,restoring=false){let added=0,duplicate=0;errors.replaceChildren();
     for(let i=0;i<lines.length;i++){const code=lines[i].trim();if(!code)continue;
       if(codes.includes(code)){duplicate++;continue;}
-      try{const record=validateSet(await decodeResult(code),sets);codes.push(code);records.push(record);added++;}
+      try{const rows=expandResult(await decodeResult(code),sets);codes.push(code);records.push(...rows);added++;}
       catch(e){errors.append(node('li',`${restoring?'Mã đã lưu':'Dòng'} ${i+1}: ${e.message}`));}
     }
     status.textContent=`${restoring?'Đã khôi phục':'Đã nhập'} ${added} mã; ${duplicate} mã trùng; ${errors.childElementCount} mã hỏng.`;render();

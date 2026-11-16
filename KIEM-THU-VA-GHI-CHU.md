@@ -1,17 +1,18 @@
 # Kiểm thử và ghi chú
 
-## Mã nộp bài và bảng điểm — PASS
+## Một mã tổng kết L100.2 — PASS
 
-- [x] Không còn config endpoint, mã lớp, POST hay fallback mạng. Đã hủy clasp login, xóa thư mục clasp-tools và apps-script ngoài repo; chưa clone/deploy dự án Google.
-- [x] Giữ form và sửa thông báo minh bạch: dữ liệu nằm trong mã do sinh viên tự gửi, trang không tự gửi đi đâu.
-- [x] Local: sinh viên giả A / TEST-A / Lớp thử, Part 2 Bài 1, làm 4/5, sai câu 11; tạo mã và Copy thành công. Dán bảng điểm hiện đúng tên, MSSV, lớp, 4/5, 80%, câu sai 11, thời gian.
-- [x] Mã cắt mất 1 và 3 ký tự: báo “Dòng 1: Mã bị thiếu ký tự hoặc sai định dạng L100.1.” Không bỏ qua im lặng.
-- [x] 3 mã / 2 sinh viên: A có 4/5 + 3/5 → 7/100, đã làm 10/100; B có 5/5 → 5/100, đã làm 5/100. Dán lại mã trùng: báo 1 mã trùng, không cộng thêm.
-- [x] Tải lại trang: vẫn đủ 3 mã / 2 sinh viên.
-- [x] Xuất CSV thực tế qua nút trên trang, đọc lại file tải xuống: đủ 3 dòng, tên tiếng Việt, “Lớp thử”, “Phần trăm”, “Câu sai” hiển thị đúng; UTF-8 BOM và escaping đã kiểm tự động.
-- [x] `test-result-code.mjs`: PASS round-trip, Unicode, mã cắt/checksum hỏng, schema/set validation, nộp lại, tổng hợp, CSV chống công thức, không gọi mạng trong tạo mã.
-- [x] `test-grading.mjs`: PASS toàn bộ hồi quy chấm điểm. Console local bảng điểm không có lỗi đỏ.
-- [x] README và bảng điểm nêu rõ không chống gian lận; không có link bảng điểm từ trang chủ sinh viên.
+- [x] Làm và nộp đủ 100 câu / 17 chặng bằng thao tác giao diện trình duyệt local; không chèn điểm vào localStorage. Mỗi chặng cố ý sai câu đầu: 83 đúng, 17 sai.
+- [x] Trang làm bài không có form/khối tạo mã; có lời nhắc và link Kết quả. Trang Kết quả tạo một mã L100.2 tổng kết, Copy thành công, hiển thị đúng **220 ký tự**.
+- [x] Dán mã vào bảng điểm: đối chiếu tự động các hàng DOM với kết quả vừa chấm, **17/17 chặng khớp đúng/tổng và câu sai**.
+- [x] Danh sách câu sai mẫu: 1, 6, 11, 16, 21, 31, 36, 41, 51, 61, 66, 71, 76, 81, 86, 91, 96.
+- [x] Mã cắt mất 3 ký tự báo rõ Dòng 1 và lỗi thiếu checksum. Mã sửa nội dung có kiểm tra CRC32.
+- [x] Tạo mã sinh viên giả B từ cùng bộ kết quả để kiểm gộp: A và B mỗi người 83/100, đã làm 100/100, 17 chặng. Không lẫn sinh viên.
+- [x] Nhập thêm L100.1 cũ của A: giải mã thành công; tổng vẫn 83/100 theo lần làm mới nhất, không cộng trùng. Chi tiết có 35 lượt chặng / 3 mã.
+- [x] Tải lại trang bảng điểm: dữ liệu còn đủ. Console không lỗi.
+- [x] Xuất cả hai CSV thật bằng nút giao diện, đọc lại file tải xuống: UTF-8 BOM, tiếng Việt có dấu đúng, chi tiết 35 dòng, tổng hợp 2 dòng với số liệu 83/100 và 100/100.
+- [x] `test-result-code.mjs`: PASS v1/v2, Unicode, cắt mã/checksum, validation, danh mục cố định, bitmask câu sai/thời gian, tổng 100 câu, 2 sinh viên, lượt cũ/mới, CSV chống công thức.
+- [x] `test-grading.mjs`: PASS hồi quy. README và brief đã cập nhật luồng một mã tổng kết.
 
 ## Dữ liệu và audio — PASS
 

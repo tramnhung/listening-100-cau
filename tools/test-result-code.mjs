@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {encodeResult,decodeResult,validateSet,summarize,csv} from '../assets/result-code.js';
+import {encodeResult,encodeSummary,decodeResult,expandResult,validateSet,summarize,csv,CODE_SETS} from '../assets/result-code.js';
 const sets=JSON.parse(readFileSync(new URL('../data/questions.json',import.meta.url))).sets;
 const a={hoTen:'Sinh viên thử A',mssv:'TEST-A',lop:'Lớp thử',setId:'vstep-p2-t01',tong:5,dung:4,cauSai:[11],time:1794816000};
 const b={...a,setId:'vstep-p2-t02',dung:3,cauSai:[16,17],time:a.time+1};
@@ -24,3 +24,15 @@ for(const file of ['submission.js','result-code.js'])assert.doesNotMatch(readFil
 console.log('PASS: Unicode round-trip, truncation, checksum corruption, schema/set validation, 3 codes/2 students, latest attempt, duplicate aggregation, Excel-safe UTF-8 CSV, no submission network.');
 console.log('Code lengths:',codes.map(c=>c.length).join(', '));
 if(process.argv.includes('--fixtures'))console.log(JSON.stringify(codes));
+assert.deepEqual(CODE_SETS,sets.map(s=>({id:s.id,numbers:s.questions.map(q=>q.number)})));
+const full=sets.map((s,i)=>({setId:s.id,tong:s.questions.length,dung:s.questions.length-1,cauSai:[s.questions[0].number],time:a.time+i*13}));
+const totalCode=await encodeSummary(a,full),decoded=await decodeResult(totalCode);
+assert.equal(decoded.version,2);assert.equal(decoded.totalRight,83);assert.equal(decoded.totalDone,100);
+assert.deepEqual(decoded.results.map(({hoTen,mssv,lop,...r})=>r),full);
+assert.equal(expandResult(decoded,sets).length,17);
+assert.deepEqual(summarize([...expandResult(decoded,sets),...expandResult(await decodeResult(await encodeSummary({...a,mssv:'TEST-B'},full)),sets)]).map(r=>[r.dung,r.done]),[[83,100],[83,100]]);
+await assert.rejects(decodeResult(totalCode.slice(0,-3)),/checksum/);
+await assert.rejects(encodeSummary(a,[full[0],full[0]]));
+await assert.rejects(encodeSummary(a,[{...full[0],cauSai:[100]}]));
+assert.equal((await decodeResult(await encodeSummary(a,[full[0]]))).totalDone,5);
+console.log('PASS v2: 100 questions/17 sets, bitmask/timestamps round-trip, 2 students, partial result, duplicate/invalid sets, truncated checksum; v1 compatibility. Full-code length:',totalCode.length);
