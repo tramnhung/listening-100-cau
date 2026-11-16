@@ -35,7 +35,7 @@
 
 - Giữ đủ 30 câu Cambridge từ JSON đã duyệt. Câu Test 3 Section 1 số 10 giữ đáp án cafe/café; `quoteSource: asr`, ghi rõ “trang in 109 thiếu trong bản scan”. 99 câu còn lại dùng `quoteSource: pdf`. ASR không quyết định đáp án.
 - Ba mapping Cambridge đã xác minh toàn file: Cookery classes; South City Cycling Club/Jim Hunter; Banford/Dalton/Linda. Bằng chứng chi tiết giữ ở thư mục làm việc `source-extraction-local/cambridge-mapping-verified.json`.
-- Loại toàn bộ Part 2 Bài 7 và tất cả câu needs_review. Giữ nguyên key trong dữ liệu nguồn; danh sách nghi sai nằm trong `DANH-SACH-CAU-NGHI-SAI-DAP-AN.md`.
+- Loại toàn bộ Part 2 Bài 7 và tất cả câu needs_review. Giữ nguyên key trong dữ liệu nguồn; danh sách đối chiếu được lưu riêng ở thư mục cha, ngoài repo và GitHub Pages.
 - Ghép các đoạn VSTEP ngắn theo nhóm để mỗi set có 5–10 câu và audio đạt tối thiểu 45 giây; khoảng nối 1,5 giây. Các đoạn trên 150 giây vẫn dưới mức tối đa 180 giây để giữ đủ ngữ cảnh.
 - Tái sử dụng Part 1 đã làm sạch. Riêng đoạn cắt A được cân âm lại từ bản sạch để đạt ngưỡng mean volume; không xử lý lại audio gốc.
 - Mọi mốc nghe tính trên MP3 cuối cùng. Cambridge Test 3 câu 7 dò bổ sung theo đoạn liền trước/sau vì ASR bỏ sót cụm “hospital”; đặt mốc 24 giây trên đoạn cắt để nghe từ trước thông tin cần thiết.
