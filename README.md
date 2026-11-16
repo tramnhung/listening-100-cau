@@ -39,41 +39,26 @@ Nguồn nằm ngoài repo, đường dẫn tương đối trong manifest. Script
 
 Nội dung và audio thuộc các tác giả, nhà xuất bản tương ứng; dùng cho học tập trong lớp. Repo không chứa PDF, audio gốc, transcript đầy đủ hay mô hình ASR.
 
-## Nộp kết quả vào Google Sheet
+## Mã nộp bài và bảng điểm lớp
 
-Giảng viên tự triển khai Apps Script theo `HUONG-DAN-NOI-GOOGLE-SHEET.md` ở thư mục cha. Website đã chuẩn bị phần gửi, chưa cấu hình hay triển khai dịch vụ Google.
+Trang giảng viên: https://tramnhung.github.io/listening-100-cau/bangdiem.html
 
-Khi nhận được URL Web app `/exec` và mã lớp, sửa đúng hai hằng số trong `assets/config.js` rồi commit/push:
+Sinh viên nhập Họ tên / MSSV / Lớp, làm bài, rồi bấm **Tạo mã nộp bài** và **Copy mã** để tự gửi qua Zalo. Không có endpoint, tài khoản dịch vụ hay thao tác gửi thông tin tự động. Form nhớ thông tin trên trình duyệt và cho sửa lại. Nếu không lưu được, trang nhắc giữ trang mở và copy mã trước khi rời trang.
 
-```js
-export const SUBMIT_ENDPOINT = "URL_WEB_APP_EXEC";
-export const MA_LOP = "MA_LOP_CUA_GIANG_VIEN";
-```
+Giảng viên giữ riêng địa chỉ `bangdiem.html` (không có liên kết từ trang chủ sinh viên). Dán mỗi mã một dòng rồi chọn **Nhập mã vào bảng**. Mã hỏng báo rõ số dòng; mã hợp lệ vẫn được nhập, mã trùng hệt được đếm và bỏ qua. Bảng tự lưu localStorage để nhập nhiều đợt, có **Xóa hết bảng điểm** kèm xác nhận. Có hai nút xuất CSV chi tiết và tổng hợp, UTF-8 BOM để Excel đọc tiếng Việt, dấu phẩy phân cột, có bảo vệ ô khỏi bị diễn giải thành công thức. Nếu Excel theo thiết lập vùng không tự tách cột, dùng Data → From Text/CSV và chọn dấu phẩy.
 
-Hiện hai giá trị đều rỗng. `SUBMIT_ENDPOINT` rỗng thì toàn bộ giao diện thu thông tin và nộp kết quả bị ẩn. File config được nạp trước app; không có thư viện ngoài.
+Bảng chi tiết giữ từng lượt; tổng hợp theo MSSV (bỏ khoảng trắng đầu/cuối, không phân biệt hoa thường), lấy thời gian mới nhất của từng chặng; nếu cùng thời gian, lấy mã nhập sau. Không cộng lặp điểm khi nộp lại. Tổng hợp hiện số đúng/100 và số câu đã làm/100. Khi sinh viên luyện lại câu sai, mã chứa kết quả cập nhật của **cả chặng**, không chỉ các câu luyện lại.
 
-Khi bật, sinh viên nhập Họ tên, Mã số sinh viên, Lớp một lần, có thể sửa lại. Thông tin và kết quả chờ nộp lưu riêng trong localStorage (`listening100-submission-v1`). Khi bị chặn lưu trữ, vẫn làm/nộp được trong trang hiện tại và có cảnh báo mất dữ liệu chờ nếu rời trang. Không tự gửi lúc lưu thông tin, chấm điểm, tải lại hoặc mở lại trang. Chỉ nút **Nộp cho cô / Thử lại** mới gửi.
+Mã phiên bản `L100.1` gồm mảng JSON gọn: họ tên, MSSV, lớp, setId, số câu, số đúng, danh sách số câu sai, thời gian chấm bài (Unix giây). Dữ liệu được nén DEFLATE, base64url và checksum CRC32. Mã mẫu kiểm thử dài 123–130 ký tự. Cần trình duyệt hiện đại có CompressionStream/DecompressionStream. Thời gian hiển thị trên bảng theo Việt Nam.
 
-JSON POST chỉ có `maLop`, `hoTen`, `mssv`, `lop`, `setId`, `setTitle`, `tong`, `dung`, `cauSai`. `cauSai` là số câu toàn bộ đề, ngăn bằng dấu phẩy; rỗng khi đúng hết. Điểm là ảnh chụp của **lượt làm vừa chấm**; khi luyện lại câu sai, `tong` là số câu trong lượt luyện lại đó, không gộp với lượt trước. Không gửi câu trả lời chi tiết, thời gian, email hay dữ liệu cá nhân khác. Dòng thông báo dữ liệu xuất hiện cạnh biểu mẫu và từng nút nộp.
+**Mã này không chống gian lận:** sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã, nên dùng làm sổ theo dõi luyện tập, không phải điểm chính thức. Checksum chỉ phát hiện lỗi sao chép; không phải chữ ký hay mã hóa bảo mật. Mã chứa thông tin cá nhân, chỉ chia sẻ cho giảng viên. Trang bảng điểm không yêu cầu đăng nhập; địa chỉ riêng không phải cơ chế phân quyền. Dữ liệu lớp chỉ nằm trên trình duyệt giảng viên; nên giữ mã gốc và xuất CSV dự phòng.
 
-Request dùng `Content-Type: text/plain;charset=utf-8`, không gửi cookie, timeout 15 giây. Chỉ phản hồi JSON `{ok:true}` mới báo gửi xong. HTTP lỗi hoặc `{ok:false}` hiện lỗi và nút Thử lại, giữ nguyên kết quả qua tải lại trang nếu localStorage hoạt động. Nút bị khóa khi đang gửi/đã gửi để tránh bấm lặp.
-
-Nếu fetch bị trình duyệt chặn CORS/lỗi mạng, thử một lần `mode: no-cors`; phản hồi opaque chỉ báo **“Đã gửi, cô kiểm tra giúp”**, không khẳng định Sheet đã nhận. Do trình duyệt không phân biệt được CORS với lỗi mạng, và request đầu có thể đã được Apps Script ghi trước khi phản hồi bị chặn, fallback có thể tạo hai dòng. Apps Script hiện chưa có chống trùng; giảng viên đối chiếu/lọc các dòng trùng. Mã lớp nằm trong file công khai, chỉ là mã phân loại/chặn sơ bộ, không phải mật khẩu bảo vệ Sheet.
-
-### Kiểm thử không dùng Google
+Kiểm thử:
 
 ```sh
-python tools/mock_submission.py
-# Trong terminal khác:
-node tools/test-submission.mjs
+node tools/test-result-code.mjs
 node tools/test-grading.mjs
+python tools/serve.py --directory . --port 8768
 ```
 
-Mở `http://127.0.0.1:8766/lam-bai.html?set=vstep-p2-t01`. Máy chủ QA thay config **trong phản hồi HTTP**, không sửa file config thật; endpoint giả ở port 8767. Chỉ dùng thông tin sinh viên giả.
-
-- `http://127.0.0.1:8767/scenario?value=fail-once`: lỗi lần đầu, lần sau thành công.
-- Đổi `value` thành `success`, `reject`, `cors`, `disabled` để thử các trường hợp tương ứng; tải lại web sau khi đổi sang/từ `disabled`.
-- `http://127.0.0.1:8767/requests`: xem payload/header nhận được. POST `/reset` xóa nhật ký QA.
-- `http://127.0.0.1:8766/qa-no-storage.html?set=vstep-p2-t01`: chặn đọc/ghi localStorage.
-
-Sau khi có endpoint thật, cần một lượt kiểm thử được giảng viên đồng ý và đối chiếu trực tiếp dòng mới trong Sheet; thử nghiệm cục bộ không thay thế bước này.
+Mở trang làm bài rồi bảng điểm trên cùng server. Test tự động kiểm tiếng Việt, round-trip, mã cắt/mã đổi checksum, dữ liệu không hợp lệ, tổng hợp 3 mã/2 sinh viên, nộp lại cùng chặng và CSV. Không dùng dịch vụ ngoài. Phần triển khai Google đã hủy; không cần cấu hình gì thêm.

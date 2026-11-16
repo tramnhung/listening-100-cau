@@ -1,20 +1,17 @@
 # Kiểm thử và ghi chú
 
-## Bổ sung Google Sheet — kiểm thử endpoint giả PASS
+## Mã nộp bài và bảng điểm — PASS
 
-- [x] `assets/config.js` có đúng hai hằng số trống; được nạp trước app. Cấu hình trống: không có biểu mẫu hay nút nộp, 5 câu của set vẫn hiển thị bình thường.
-- [x] Họ tên/MSSV/Lớp lưu và tự khôi phục qua tải lại; sửa thông tin được. Mọi đọc/ghi localStorage đều try/catch.
-- [x] Thông báo minh bạch đúng nguyên văn cạnh ô nhập và nút nộp. Nhật ký endpoint **0 request** sau lưu thông tin và chấm bài, trước khi bấm nộp.
-- [x] POST nhận đúng 9 trường, header `text/plain;charset=utf-8`, không preflight. Lượt giao diện thử 4/5 gửi `tong:5`, `dung:4`, `cauSai:"11"`.
-- [x] Lỗi HTTP 503 hiện Gửi hỏng + Thử lại; tải lại vẫn giữ kết quả/thông tin; bấm Thử lại nhận `{ok:true}` và báo Gửi xong.
-- [x] `{ok:false,error:"sai ma lop"}` không coi là thành công và không fallback; kiểm bằng test Node với endpoint HTTP thật cục bộ.
-- [x] CORS bị chặn thật trong trình duyệt: fallback `no-cors`, hiển thị “Đã gửi, cô kiểm tra giúp”, không khẳng định đã nhận. Lỗi console do tình huống CORS/503 được chủ động tạo trong QA.
-- [x] Chặn đọc/ghi localStorage: nhập thông tin, chấm 5/5, nộp thành công trong phiên; hiện nhắc giữ trang mở để không mất kết quả chờ.
-- [x] Test transport kiểm thêm timeout, mất mạng cả hai lần, khóa tính năng khi config trống và không gửi thừa dữ liệu.
-- [x] Không triển khai Apps Script, không gửi đến Google; toàn bộ dữ liệu kiểm thử là giả trên localhost.
-- [ ] Chờ URL endpoint + mã lớp thật: dán config, gửi lượt thử được giảng viên đồng ý và kiểm dòng trong Sheet. Chưa thể xác minh Sheet thật khi chưa có cấu hình.
-
-Giới hạn Apps Script hiện tại: fallback có thể ghi trùng nếu POST đầu được xử lý nhưng phản hồi bị CORS chặn; README nêu rõ để giảng viên lọc/đối chiếu. Kết quả luyện lại là riêng lượt luyện lại, không tự cộng dồn điểm.
+- [x] Không còn config endpoint, mã lớp, POST hay fallback mạng. Đã hủy clasp login, xóa thư mục clasp-tools và apps-script ngoài repo; chưa clone/deploy dự án Google.
+- [x] Giữ form và sửa thông báo minh bạch: dữ liệu nằm trong mã do sinh viên tự gửi, trang không tự gửi đi đâu.
+- [x] Local: sinh viên giả A / TEST-A / Lớp thử, Part 2 Bài 1, làm 4/5, sai câu 11; tạo mã và Copy thành công. Dán bảng điểm hiện đúng tên, MSSV, lớp, 4/5, 80%, câu sai 11, thời gian.
+- [x] Mã cắt mất 1 và 3 ký tự: báo “Dòng 1: Mã bị thiếu ký tự hoặc sai định dạng L100.1.” Không bỏ qua im lặng.
+- [x] 3 mã / 2 sinh viên: A có 4/5 + 3/5 → 7/100, đã làm 10/100; B có 5/5 → 5/100, đã làm 5/100. Dán lại mã trùng: báo 1 mã trùng, không cộng thêm.
+- [x] Tải lại trang: vẫn đủ 3 mã / 2 sinh viên.
+- [x] Xuất CSV thực tế qua nút trên trang, đọc lại file tải xuống: đủ 3 dòng, tên tiếng Việt, “Lớp thử”, “Phần trăm”, “Câu sai” hiển thị đúng; UTF-8 BOM và escaping đã kiểm tự động.
+- [x] `test-result-code.mjs`: PASS round-trip, Unicode, mã cắt/checksum hỏng, schema/set validation, nộp lại, tổng hợp, CSV chống công thức, không gọi mạng trong tạo mã.
+- [x] `test-grading.mjs`: PASS toàn bộ hồi quy chấm điểm. Console local bảng điểm không có lỗi đỏ.
+- [x] README và bảng điểm nêu rõ không chống gian lận; không có link bảng điểm từ trang chủ sinh viên.
 
 ## Dữ liệu và audio — PASS
 

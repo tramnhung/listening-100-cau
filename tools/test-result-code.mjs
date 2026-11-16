@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {encodeResult,decodeResult,validateSet,summarize,csv} from '../assets/result-code.js';
+const sets=JSON.parse(readFileSync(new URL('../data/questions.json',import.meta.url))).sets;
+const a={hoTen:'Sinh viên thử A',mssv:'TEST-A',lop:'Lớp thử',setId:'vstep-p2-t01',tong:5,dung:4,cauSai:[11],time:1794816000};
+const b={...a,setId:'vstep-p2-t02',dung:3,cauSai:[16,17],time:a.time+1};
+const c={...a,hoTen:'Sinh viên thử B',mssv:'TEST-B',dung:5,cauSai:[],time:a.time+2};
+const codes=await Promise.all([a,b,c].map(encodeResult));
+for(let i=0;i<3;i++)assert.deepEqual(await decodeResult(codes[i]),[a,b,c][i]);
+await assert.rejects(decodeResult(codes[0].slice(0,-1)),/thiếu|định dạng/);
+const corrupt=codes[0].slice(0,12)+(codes[0][12]==='A'?'B':'A')+codes[0].slice(13);
+await assert.rejects(decodeResult(corrupt),/Checksum/);
+await assert.rejects(encodeResult({...a,dung:8}));
+assert.throws(()=>validateSet({...a,cauSai:[100]},sets),/khớp/);
+assert.throws(()=>validateSet({...a,setId:'missing'},sets),/tìm thấy/);
+const records=await Promise.all(codes.map(async code=>validateSet(await decodeResult(code),sets)));
+assert.deepEqual(summarize(records).map(r=>[r.mssv,r.dung,r.done,r.sets]),[['TEST-A',7,10,2],['TEST-B',5,5,1]]);
+assert.deepEqual(summarize([...records,{...records[0],dung:2,cauSai:[11,12,13],time:a.time+10}]).map(r=>r.dung),[5,5]);
+assert.deepEqual(summarize([...records,records[0]]).map(r=>r.dung),[7,5]);
+const output=csv([['Tên','MSSV'],['Nguyễn, "An"','=1+1']]);
+assert.ok(output.startsWith('\ufeff'));assert.ok(output.includes('"Nguyễn, ""An"""'));assert.ok(output.includes('"\'=1+1"'));assert.ok(output.includes('\r\n'));
+// Encoding only uses local APIs; detect accidental endpoint code in both entry points.
+for(const file of ['submission.js','result-code.js'])assert.doesNotMatch(readFileSync(new URL('../assets/'+file,import.meta.url),'utf8'),/\bfetch\s*\(|XMLHttpRequest|sendBeacon/);
+console.log('PASS: Unicode round-trip, truncation, checksum corruption, schema/set validation, 3 codes/2 students, latest attempt, duplicate aggregation, Excel-safe UTF-8 CSV, no submission network.');
+console.log('Code lengths:',codes.map(c=>c.length).join(', '));
+if(process.argv.includes('--fixtures'))console.log(JSON.stringify(codes));
