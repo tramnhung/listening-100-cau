@@ -1,5 +1,17 @@
 # Kiểm thử và ghi chú
 
+## Bố cục câu hỏi và tên bài — PASS
+
+- [x] 17 title trong JSON là Bài 1–17; thứ tự/ID, mức độ, số câu và thời lượng không đổi.
+- [x] Không còn dòng nguồn trong câu hỏi hoặc lời giải. `nguon.html` không thay đổi.
+- [x] Sáu bài điền từ có ghi chú mới gồm các đoạn liên kết, placeholder đánh số trong mạch văn; không chép trang ghi chú sách. Kiểm tự động đủ mỗi placeholder đúng một lần, đúng thứ tự.
+- [x] So với commit trước: toàn bộ answers/answer, maxWords, audioStartSec, transcriptQuote, source không đổi.
+- [x] Trình duyệt 375 px: Bài 12 có một khối ghi chú, không tràn ngang. Nhập choose/private/20%/healthy/zzzz → 4/5; luyện lại chỉ ô 75 với bones → 1/1; giữ đủ ngữ cảnh.
+- [x] Bài 3 có hướng dẫn riêng Trắc nghiệm và Đúng/Sai; trả lời đủ → 5/5. DOM không có dòng nguồn trước/sau chấm.
+- [x] Tạo mã tổng kết ở Kết quả, dán bảng điểm → 10/100 đã làm, 10/100 đúng; cột Chặng hiện Bài 3 và Bài 12, mỗi bài 5/5.
+- [x] Console không lỗi. Ba bộ kiểm tra dữ liệu/audio, chấm điểm, mã nộp đều PASS.
+- [x] README và brief cập nhật theo yêu cầu mới; trang nguồn bản quyền giữ nguyên.
+
 ## Một mã tổng kết L100.2 — PASS
 
 - [x] Làm và nộp đủ 100 câu / 17 chặng bằng thao tác giao diện trình duyệt local; không chèn điểm vào localStorage. Mỗi chặng cố ý sai câu đầu: 83 đúng, 17 sai.

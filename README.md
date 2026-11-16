@@ -60,3 +60,14 @@ DEFLATE + base64url + CRC32 như v1. Mảng gọn `[họ tên, MSSV, lớp, th�
 **Mã không chống gian lận:** sinh viên biết kỹ thuật có thể sửa điểm trước khi tạo mã; dùng làm sổ theo dõi luyện tập, không phải điểm chính thức. Checksum chỉ phát hiện lỗi sao chép, không phải chữ ký hay mã hóa bảo mật. Mã có thông tin cá nhân, chỉ gửi giảng viên. Địa chỉ bảng điểm riêng không phải cơ chế phân quyền; dữ liệu lớp nằm trên trình duyệt giảng viên.
 
 Kiểm thử: `node tools/test-result-code.mjs`, `node tools/test-grading.mjs`; chạy local bằng `python tools/serve.py --directory . --port 8770`. Bộ test bao gồm v1/v2, 100 câu, mã cắt/checksum, Unicode, gộp 2 sinh viên, không cộng trùng và CSV. Không cần endpoint hoặc tài khoản dịch vụ.
+
+
+## Trình bày bài luyện (cập nhật 16/11/2026)
+
+17 chặng dùng tên Bài 1–Bài 17 theo thứ tự cố định trong JSON; nhãn mức độ, số câu, thời lượng và ID chặng giữ nguyên. Bảng điểm/CSV lấy tên hiện tại từ JSON nên mã v1/v2 cũ cũng hiển thị Bài N.
+
+Mỗi chặng có hướng dẫn tiếng Việt cho từng dạng câu xuất hiện. Không hiện dòng nguồn dưới mỗi câu hoặc trong lời giải; dữ liệu nguồn vẫn giữ để đối chiếu, trang `nguon.html` giữ nguyên.
+
+Sáu chặng điền từ (Bài 12–17) dùng `gapNotes.heading` và `gapNotes.paragraphs`: một khối ghi chú liên kết bằng câu văn mới, do người biên soạn diễn đạt lại theo nội dung nghe; không sao chép trang ghi chú Cambridge. Các token `{{71}}`…`{{100}}` biến thành ô trống có số ngay trong câu. Mỗi ô xuất hiện một lần, đúng thứ tự. Đáp án, các biến thể, maxWords, trích dẫn và mốc nghe giữ nguyên. Ô 73 nhắc viết số kèm ký hiệu % (ví dụ minh họa khác đáp án), phù hợp dạng một số và bộ đáp án có sẵn.
+
+Sau nộp, khối ghi chú vẫn giữ nguyên, ô đúng/sai được đánh dấu và lời giải riêng xuất hiện bên dưới. Khi luyện lại câu sai, vẫn hiện cả ghi chú; ô đã đúng giữ câu trả lời trước đó và chỉ đọc để không mất ngữ cảnh.

@@ -5,7 +5,7 @@
   "sets": [
     {
       "id": "vstep-p1-announcements-a",
-      "title": "Thông báo ngắn – Chặng 1",
+      "title": "Bài 1",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 1",
@@ -222,7 +222,7 @@
     },
     {
       "id": "vstep-p1-announcements-b",
-      "title": "Thông báo ngắn – Chặng 2",
+      "title": "Bài 2",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 1",
@@ -439,7 +439,7 @@
     },
     {
       "id": "vstep-p2-t01",
-      "title": "VSTEP Part 2 – Bài 1",
+      "title": "Bài 3",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 2",
@@ -620,7 +620,7 @@
     },
     {
       "id": "vstep-p2-t02",
-      "title": "VSTEP Part 2 – Bài 2",
+      "title": "Bài 4",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 2",
@@ -801,7 +801,7 @@
     },
     {
       "id": "vstep-p2-t06-vstep-p2-t08",
-      "title": "Bốc thăm chỗ đỗ xe và trung tâm thể thao",
+      "title": "Bài 5",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 2",
@@ -1146,7 +1146,7 @@
     },
     {
       "id": "vstep-p2-t11",
-      "title": "VSTEP Part 2 – Bài 11",
+      "title": "Bài 6",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 2",
@@ -1327,7 +1327,7 @@
     },
     {
       "id": "vstep-p2-t14",
-      "title": "VSTEP Part 2 – Bài 14",
+      "title": "Bài 7",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 2",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": "vstep-p3-t04-vstep-p3-t05",
-      "title": "Beethoven và động vật ngủ đông",
+      "title": "Bài 8",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 3",
@@ -1853,7 +1853,7 @@
     },
     {
       "id": "vstep-p3-t06-vstep-p3-t18",
-      "title": "Thư công việc và đi bộ",
+      "title": "Bài 9",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 3",
@@ -2198,7 +2198,7 @@
     },
     {
       "id": "vstep-p3-t29",
-      "title": "VSTEP Part 3 – Bài 29",
+      "title": "Bài 10",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 3",
@@ -2415,7 +2415,7 @@
     },
     {
       "id": "vstep-p3-t31",
-      "title": "VSTEP Part 3 – Bài 31",
+      "title": "Bài 11",
       "source": {
         "book": "Bộ bổ sung Nghe VSTEP",
         "part": "Part 3",
@@ -2632,22 +2632,21 @@
     },
     {
       "id": "cam13-t1-s1-q01-05",
-      "title": "Cookery classes – Chặng 1",
+      "title": "Bài 12",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 1,
         "section": 1,
         "items": "1-5"
       },
-      "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1",
       "maxPlays": 0,
       "audio": "audio/cam13-t1-s1-q01-05.mp3",
       "questions": [
         {
-          "promptBefore": "The Food Studio — how to",
-          "promptAfter": "and cook with seasonal products",
+          "promptBefore": "At the Food Studio, lessons cover seasonal ingredients: students learn how to ",
+          "promptAfter": " them before preparing a meal",
           "maxWords": 1,
           "answers": [
             "choose"
@@ -2673,8 +2672,8 @@
           "audioStartSec": 29.0
         },
         {
-          "promptBefore": "The Food Studio — also offers",
-          "promptAfter": "classes",
+          "promptBefore": "Anyone wanting individual tuition can ask about ",
+          "promptAfter": " lessons",
           "maxWords": 1,
           "answers": [
             "private"
@@ -2700,8 +2699,8 @@
           "audioStartSec": 37.96
         },
         {
-          "promptBefore": "The Food Studio — clients who return get a",
-          "promptAfter": "discount",
+          "promptBefore": "A later booking qualifies returning learners for a discount of ",
+          "promptAfter": ".",
           "maxWords": 2,
           "answers": [
             "20 percent",
@@ -2729,8 +2728,8 @@
           "audioStartSec": 55.94
         },
         {
-          "promptBefore": "Bond's Cookery School — food that is",
-          "promptAfter": "",
+          "promptBefore": "A different option is Bond's Cookery School, where the emphasis is on making ",
+          "promptAfter": " meals",
           "maxWords": 1,
           "answers": [
             "healthy"
@@ -2756,8 +2755,8 @@
           "audioStartSec": 72.84
         },
         {
-          "promptBefore": "Bond's Cookery School — includes recipes to strengthen your",
-          "promptAfter": "",
+          "promptBefore": "Some recipes use ingredients intended to help keep your ",
+          "promptAfter": " strong.",
           "maxWords": 1,
           "answers": [
             "bones"
@@ -2783,26 +2782,34 @@
           "audioStartSec": 95.56
         }
       ],
-      "audioDurationSec": 102.604
+      "audioDurationSec": 102.604,
+      "gapNotes": {
+        "heading": "Choosing a cooking class",
+        "paragraphs": [
+          "At the Food Studio, lessons cover seasonal ingredients: students learn how to {{71}} them before preparing a meal. Anyone wanting individual tuition can ask about {{72}} lessons. A later booking qualifies returning learners for a discount of {{73}}.",
+          "A different option is Bond's Cookery School, where the emphasis is on making {{74}} meals. Some recipes use ingredients intended to help keep your {{75}} strong."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet.",
+        "hint": "Ô 73: ghi số kèm ký hiệu %, ví dụ 15%."
+      }
     },
     {
       "id": "cam13-t1-s1-q06-10",
-      "title": "Cookery classes – Chặng 2",
+      "title": "Bài 13",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 1,
         "section": 1,
         "items": "6-10"
       },
-      "instruction": "Complete the table below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1",
       "maxPlays": 0,
       "audio": "audio/cam13-t1-s1-q06-10.mp3",
       "questions": [
         {
-          "promptBefore": "Bond's Cookery School — they have a free",
-          "promptAfter": "every Thursday",
+          "promptBefore": "Bond's Cookery School also welcomes people to a free ",
+          "promptAfter": " on Thursday evenings",
           "maxWords": 1,
           "answers": [
             "lecture"
@@ -2828,8 +2835,8 @@
           "audioStartSec": 11.6
         },
         {
-          "promptBefore": "The",
-          "promptAfter": "Centre",
+          "promptBefore": "Another place to consider is the ",
+          "promptAfter": " Centre, whose classes focus largely on … cooking.",
           "maxWords": 1,
           "answers": [
             "Arretsa"
@@ -2855,8 +2862,8 @@
           "audioStartSec": 41.88
         },
         {
-          "promptBefore": "The Arretsa Centre — mainly",
-          "promptAfter": "food",
+          "promptBefore": "Another place to consider is the … Centre, whose classes focus largely on ",
+          "promptAfter": " cooking.",
           "maxWords": 1,
           "answers": [
             "vegetarian"
@@ -2882,7 +2889,7 @@
           "audioStartSec": 56.42
         },
         {
-          "promptBefore": "The Arretsa Centre — located near the",
+          "promptBefore": "To find this centre, look in the area beside the ",
           "promptAfter": "",
           "maxWords": 1,
           "answers": [
@@ -2909,8 +2916,8 @@
           "audioStartSec": 70.52
         },
         {
-          "promptBefore": "The Arretsa Centre — a special course in skills with a",
-          "promptAfter": "is sometimes available",
+          "promptBefore": "Besides its regular cooking classes, it sometimes runs a short session on handling a ",
+          "promptAfter": " safely and effectively.",
           "maxWords": 1,
           "answers": [
             "knife"
@@ -2936,26 +2943,33 @@
           "audioStartSec": 78.2
         }
       ],
-      "audioDurationSec": 94.707
+      "audioDurationSec": 94.707,
+      "gapNotes": {
+        "heading": "More ways to learn cooking",
+        "paragraphs": [
+          "Bond's Cookery School also welcomes people to a free {{76}} on Thursday evenings. Another place to consider is the {{77}} Centre, whose classes focus largely on {{78}} cooking.",
+          "To find this centre, look in the area beside the {{79}}. Besides its regular cooking classes, it sometimes runs a short session on handling a {{80}} safely and effectively."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet."
+      }
     },
     {
       "id": "cam13-t2-s1-q01-05",
-      "title": "South City Cycling Club – Chặng 1",
+      "title": "Bài 14",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 2,
         "section": 1,
         "items": "1-5"
       },
-      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1+/B2",
       "maxPlays": 0,
       "audio": "audio/cam13-t2-s1-q01-05.mp3",
       "questions": [
         {
-          "promptBefore": "Full membership costs $260; this covers cycling and",
-          "promptAfter": "all over Australia",
+          "promptBefore": "A full member pays $260 for cover that extends beyond everyday cycling to ",
+          "promptAfter": " around Australia",
           "maxWords": 1,
           "answers": [
             "races"
@@ -2981,8 +2995,8 @@
           "audioStartSec": 16.12
         },
         {
-          "promptBefore": "Cost of membership includes the club fee and",
-          "promptAfter": "",
+          "promptBefore": "The payment also provides ",
+          "promptAfter": " against accidents",
           "maxWords": 1,
           "answers": [
             "insurance"
@@ -3008,8 +3022,8 @@
           "audioStartSec": 64.76
         },
         {
-          "promptBefore": "The club kit is made by a company called",
-          "promptAfter": "",
+          "promptBefore": "For the club clothing, the supplier's name is ",
+          "promptAfter": ".",
           "maxWords": 1,
           "answers": [
             "Jerriz"
@@ -3035,8 +3049,8 @@
           "audioStartSec": 102.48
         },
         {
-          "promptBefore": "Level B: speed about",
-          "promptAfter": "kph",
+          "promptBefore": "Level B suits someone who can maintain roughly ",
+          "promptAfter": " kilometres per hour",
           "maxWords": 1,
           "answers": [
             "25",
@@ -3064,8 +3078,8 @@
           "audioStartSec": 139.96
         },
         {
-          "promptBefore": "Tuesdays at 5.30 am, meet at the",
-          "promptAfter": "",
+          "promptBefore": "For the early Tuesday ride, arrive at the ",
+          "promptAfter": " at 5.30 in the morning.",
           "maxWords": 1,
           "answers": [
             "stadium"
@@ -3091,25 +3105,32 @@
           "audioStartSec": 167.44
         }
       ],
-      "audioDurationSec": 177.5
+      "audioDurationSec": 177.5,
+      "gapNotes": {
+        "heading": "Joining a cycling club",
+        "paragraphs": [
+          "A full member pays $260 for cover that extends beyond everyday cycling to {{81}} around Australia. The payment also provides {{82}} against accidents. For the club clothing, the supplier's name is {{83}}.",
+          "Riders are placed in groups according to their pace. Level B suits someone who can maintain roughly {{84}} kilometres per hour. For the early Tuesday ride, arrive at the {{85}} at 5.30 in the morning."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet."
+      }
     },
     {
       "id": "cam13-t2-s1-q06-10",
-      "title": "South City Cycling Club – Chặng 2",
+      "title": "Bài 15",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 2,
         "section": 1,
         "items": "6-10"
       },
-      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1+/B2",
       "maxPlays": 0,
       "audio": "audio/cam13-t2-s1-q06-10.mp3",
       "questions": [
         {
-          "promptBefore": "Thursdays at 5.30 am, meet at the entrance to the",
+          "promptBefore": "The Thursday outing starts at 5.30 am, with everyone gathering by the entrance to the ",
           "promptAfter": "",
           "maxWords": 1,
           "answers": [
@@ -3136,8 +3157,8 @@
           "audioStartSec": 6.68
         },
         {
-          "promptBefore": "Members often have",
-          "promptAfter": "together afterwards",
+          "promptBefore": "Afterwards, riders often continue chatting over ",
+          "promptAfter": "",
           "maxWords": 1,
           "answers": [
             "coffee"
@@ -3163,8 +3184,8 @@
           "audioStartSec": 37.54
         },
         {
-          "promptBefore": "There is not always a",
-          "promptAfter": "with the group on these rides",
+          "promptBefore": "Do not assume that a ",
+          "promptAfter": " will accompany every group.",
           "maxWords": 1,
           "answers": [
             "leader"
@@ -3190,8 +3211,8 @@
           "audioStartSec": 52.38
         },
         {
-          "promptBefore": "Check and print the",
-          "promptAfter": "on the website beforehand",
+          "promptBefore": "Before setting off, visit the website and print the ",
+          "promptAfter": " so you know where to go",
           "maxWords": 1,
           "answers": [
             "route"
@@ -3217,8 +3238,8 @@
           "audioStartSec": 69.34
         },
         {
-          "promptBefore": "Bikes must have",
-          "promptAfter": "",
+          "promptBefore": "Check your bicycle too: it needs working ",
+          "promptAfter": " for these early starts.",
           "maxWords": 1,
           "answers": [
             "lights"
@@ -3244,26 +3265,33 @@
           "audioStartSec": 98.0
         }
       ],
-      "audioDurationSec": 110.722
+      "audioDurationSec": 110.722,
+      "gapNotes": {
+        "heading": "Preparing for group rides",
+        "paragraphs": [
+          "The Thursday outing starts at 5.30 am, with everyone gathering by the entrance to the {{86}}. Afterwards, riders often continue chatting over {{87}}. Do not assume that a {{88}} will accompany every group.",
+          "Before setting off, visit the website and print the {{89}} so you know where to go. Check your bicycle too: it needs working {{90}} for these early starts."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet."
+      }
     },
     {
       "id": "cam13-t3-s1-q01-05",
-      "title": "Moving to Banford City – Chặng 1",
+      "title": "Bài 16",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 3,
         "section": 1,
         "items": "1-5"
       },
-      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1+/B2",
       "maxPlays": 0,
       "audio": "audio/cam13-t3-s1-q01-05.mp3",
       "questions": [
         {
-          "promptBefore": "Accommodation — average rent: £",
-          "promptAfter": "a month",
+          "promptBefore": "When budgeting for a home in Banford, allow about £",
+          "promptAfter": " each month for a reasonable rental",
           "maxWords": 1,
           "answers": [
             "850"
@@ -3289,7 +3317,7 @@
           "audioStartSec": 39.84
         },
         {
-          "promptBefore": "Linda travels to work by",
+          "promptBefore": "Linda gets to her job by ",
           "promptAfter": "",
           "maxWords": 1,
           "answers": [
@@ -3317,8 +3345,8 @@
           "audioStartSec": 76.54
         },
         {
-          "promptBefore": "Limited",
-          "promptAfter": "in city centre",
+          "promptBefore": "Driving into the centre is less convenient because ",
+          "promptAfter": " is scarce.",
           "maxWords": 1,
           "answers": [
             "parking"
@@ -3344,8 +3372,8 @@
           "audioStartSec": 96.08
         },
         {
-          "promptBefore": "Trains to London every",
-          "promptAfter": "minutes",
+          "promptBefore": "For trips to London, the fast service runs at intervals of ",
+          "promptAfter": " minutes",
           "maxWords": 1,
           "answers": [
             "30",
@@ -3372,8 +3400,8 @@
           "audioStartSec": 115.92
         },
         {
-          "promptBefore": "Poor train service at",
-          "promptAfter": "",
+          "promptBefore": "Rail travel is less dependable at ",
+          "promptAfter": ", so plan those journeys with extra care.",
           "maxWords": 1,
           "answers": [
             "weekends",
@@ -3400,26 +3428,33 @@
           "audioStartSec": 133.34
         }
       ],
-      "audioDurationSec": 157.62
+      "audioDurationSec": 157.62,
+      "gapNotes": {
+        "heading": "Planning a move to Banford",
+        "paragraphs": [
+          "When budgeting for a home in Banford, allow about £{{91}} each month for a reasonable rental. Linda gets to her job by {{92}}. Driving into the centre is less convenient because {{93}} is scarce.",
+          "For trips to London, the fast service runs at intervals of {{94}} minutes. Rail travel is less dependable at {{95}}, so plan those journeys with extra care."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet."
+      }
     },
     {
       "id": "cam13-t3-s1-q06-10",
-      "title": "Moving to Banford City – Chặng 2",
+      "title": "Bài 17",
       "source": {
         "book": "Cambridge IELTS 13",
         "test": 3,
         "section": 1,
         "items": "6-10"
       },
-      "instruction": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
       "skill": "listening",
       "level": "B1+/B2",
       "maxPlays": 0,
       "audio": "audio/cam13-t3-s1-q06-10.mp3",
       "questions": [
         {
-          "promptBefore": "New",
-          "promptAfter": "opened recently",
+          "promptBefore": "Banford has recently gained a new ",
+          "promptAfter": " for entertainment",
           "maxWords": 1,
           "answers": [
             "cinema"
@@ -3445,8 +3480,8 @@
           "audioStartSec": 3.94
         },
         {
-          "promptBefore": "",
-          "promptAfter": "has excellent reputation",
+          "promptBefore": "Its ",
+          "promptAfter": " is particularly well regarded, and Linda can recommend a … who works on Bridge Street.",
           "maxWords": 1,
           "answers": [
             "hospital"
@@ -3472,8 +3507,8 @@
           "audioStartSec": 24.0
         },
         {
-          "promptBefore": "Good",
-          "promptAfter": "on Bridge Street",
+          "promptBefore": "Its … is particularly well regarded, and Linda can recommend a ",
+          "promptAfter": " who works on Bridge Street.",
           "maxWords": 1,
           "answers": [
             "dentist"
@@ -3499,8 +3534,8 @@
           "audioStartSec": 38.14
         },
         {
-          "promptBefore": "Meet Linda on",
-          "promptAfter": "after 5.30 pm",
+          "promptBefore": "To discuss the move in person, arrange to see Linda on ",
+          "promptAfter": " after 5.30 pm",
           "maxWords": 1,
           "answers": [
             "Thursday"
@@ -3526,8 +3561,8 @@
           "audioStartSec": 78.58
         },
         {
-          "promptBefore": "In the",
-          "promptAfter": "opposite the station",
+          "promptBefore": "The proposed meeting place is a ",
+          "promptAfter": " near the station.",
           "maxWords": 1,
           "answers": [
             "cafe",
@@ -3555,7 +3590,15 @@
           "audioStartSec": 99.9
         }
       ],
-      "audioDurationSec": 121.396
+      "audioDurationSec": 121.396,
+      "gapNotes": {
+        "heading": "Local facilities and a visit",
+        "paragraphs": [
+          "Banford has recently gained a new {{96}} for entertainment. Its {{97}} is particularly well regarded, and Linda can recommend a {{98}} who works on Bridge Street.",
+          "To discuss the move in person, arrange to see Linda on {{99}} after 5.30 pm. The proposed meeting place is a {{100}} near the station."
+        ],
+        "authorship": "Original paraphrase based on listening transcript; not copied from source worksheet."
+      }
     }
   ]
 }

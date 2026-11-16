@@ -35,6 +35,14 @@ def validate_questions(d,audio):
  need([q['number'] for q in qs]==list(range(1,101)),'numbering')
  need(len({q['id'] for q in qs})==100,'unique IDs')
  need(len({s['id'] for s in sets})==len(sets),'unique set IDs')
+ need([s['title'] for s in sets]==[f'Bài {i}' for i in range(1,18)],'Bài 1–17 titles')
+ for s in sets:
+  gaps=[q for q in s['questions'] if q['type']=='gap_fill']
+  if gaps:
+   notes=s.get('gapNotes',{});paragraphs=notes.get('paragraphs',[])
+   need(bool(notes.get('heading')) and bool(paragraphs),s['id']+' continuous notes')
+   numbers=[int(n) for text in paragraphs for n in re.findall(r'\{\{(\d+)\}\}',text)]
+   need(numbers==[q['number'] for q in gaps],s['id']+' each gap appears once, in order')
  tf=[q for q in qs if q['type']=='true_false'];need(collections.Counter(q['answer'] for q in tf)=={'TRUE':10,'FALSE':10},'TF balance');need(all(a['answer']!=b['answer'] for a,b in zip(tf,tf[1:])),'TF alternating')
  need(sum(q.get('quoteSource')=='asr' for q in qs)<=3,'ASR maximum')
  known={x['file']:x for x in audio}
